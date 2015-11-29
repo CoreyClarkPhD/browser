@@ -1,0 +1,2833 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'heroku' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.2
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'heroku', null ]
+7 verbose cache add spec heroku
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'heroku',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'heroku',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed heroku@*
+10 verbose addNamed "*" is a valid semver range for heroku
+11 silly addNameRange { name: 'heroku', range: '*', hasData: false }
+12 silly mapToRegistry name heroku
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/heroku
+16 verbose addNameRange registry:https://registry.npmjs.org/heroku not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/heroku
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 4:30:19 PM
+20 verbose request id fc0ea475c1fd2b59
+21 verbose etag "8187TTUIEMHQCRNGAFYLY1PJ3"
+22 http request GET https://registry.npmjs.org/heroku
+23 http 304 https://registry.npmjs.org/heroku
+24 verbose headers { date: 'Sun, 29 Nov 2015 23:30:20 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   'cache-control': 'max-age=60',
+24 verbose headers   etag: '"8187TTUIEMHQCRNGAFYLY1PJ3"',
+24 verbose headers   age: '36',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-sjc3125-SJC',
+24 verbose headers   'x-cache': 'HIT',
+24 verbose headers   'x-cache-hits': '1',
+24 verbose headers   'x-timer': 'S1448839820.309367,VS0,VE0',
+24 verbose headers   vary: 'Accept' }
+25 silly get cb [ 304,
+25 silly get   { date: 'Sun, 29 Nov 2015 23:30:20 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     'cache-control': 'max-age=60',
+25 silly get     etag: '"8187TTUIEMHQCRNGAFYLY1PJ3"',
+25 silly get     age: '36',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-sjc3125-SJC',
+25 silly get     'x-cache': 'HIT',
+25 silly get     'x-cache-hits': '1',
+25 silly get     'x-timer': 'S1448839820.309367,VS0,VE0',
+25 silly get     vary: 'Accept' } ]
+26 verbose etag https://registry.npmjs.org/heroku from cache
+27 verbose get saving heroku to /Users/chris/.npm/registry.npmjs.org/heroku/.cache.json
+28 silly addNameRange number 2 { name: 'heroku', range: '*', hasData: true }
+29 silly addNameRange versions [ 'heroku',
+29 silly addNameRange   [ '0.0.1',
+29 silly addNameRange     '0.0.2',
+29 silly addNameRange     '0.0.3',
+29 silly addNameRange     '0.0.4',
+29 silly addNameRange     '0.0.5',
+29 silly addNameRange     '0.0.6',
+29 silly addNameRange     '0.0.7',
+29 silly addNameRange     '0.1.0',
+29 silly addNameRange     '0.1.1',
+29 silly addNameRange     '0.1.2',
+29 silly addNameRange     '0.1.3' ] ]
+30 silly addNamed heroku@0.1.3
+31 verbose addNamed "0.1.3" is a plain semver version for heroku
+32 silly cache afterAdd heroku@0.1.3
+33 verbose afterAdd /Users/chris/.npm/heroku/0.1.3/package/package.json not in flight; writing
+34 verbose afterAdd /Users/chris/.npm/heroku/0.1.3/package/package.json written
+35 silly install resolved [ { name: 'heroku',
+35 silly install resolved     description: 'Heroku API bindings for node.',
+35 silly install resolved     version: '0.1.3',
+35 silly install resolved     homepage: 'http://github.com/toots/node-heroku',
+35 silly install resolved     author: { name: 'Romain Beauxis' },
+35 silly install resolved     repository: { type: 'git', url: 'git://github.com/toots/node-heroku.git' },
+35 silly install resolved     bugs: { url: 'http://github.com/toots/node-heroku/issues' },
+35 silly install resolved     main: 'lib/heroku.js',
+35 silly install resolved     directories: { lib: './lib', test: './test', src: './src' },
+35 silly install resolved     scripts: { test: 'cake spec' },
+35 silly install resolved     engine: { node: '>= 0.4.7', npm: '1' },
+35 silly install resolved     licences: [ [Object] ],
+35 silly install resolved     dependencies: { 'coffee-script': '1.6.3', 'jasmine-node': '1.10.2' },
+35 silly install resolved     gitHead: 'a3f0b5c6ca992c94cba522ef0b09c0d4c033aedd',
+35 silly install resolved     _id: 'heroku@0.1.3',
+35 silly install resolved     _shasum: '65af1921e6fe784f3980b412940143d057cc9d78',
+35 silly install resolved     _from: 'heroku@*',
+35 silly install resolved     _npmVersion: '2.7.5',
+35 silly install resolved     _nodeVersion: '0.12.2',
+35 silly install resolved     _npmUser: { name: 'toots', email: 'toots@rastageeks.org' },
+35 silly install resolved     dist:
+35 silly install resolved      { shasum: '65af1921e6fe784f3980b412940143d057cc9d78',
+35 silly install resolved        tarball: 'http://registry.npmjs.org/heroku/-/heroku-0.1.3.tgz' },
+35 silly install resolved     maintainers: [ [Object] ],
+35 silly install resolved     _resolved: 'https://registry.npmjs.org/heroku/-/heroku-0.1.3.tgz',
+35 silly install resolved     readme: 'ERROR: No README data found!' } ]
+36 info install heroku@0.1.3 into /usr/local/lib
+37 info installOne heroku@0.1.3
+38 verbose installOne of heroku to /usr/local/lib not in flight; installing
+39 verbose lock using /Users/chris/.npm/_locks/heroku-1f0311d54eba6df8.lock for /usr/local/lib/node_modules/heroku
+40 silly install write writing heroku 0.1.3 to /usr/local/lib/node_modules/heroku
+41 verbose unbuild lib/node_modules/heroku
+42 info preuninstall heroku@0.1.3
+43 info uninstall heroku@0.1.3
+44 verbose unbuild rmStuff heroku@0.1.3 from /usr/local/lib/node_modules
+45 info postuninstall heroku@0.1.3
+46 silly gentlyRm /usr/local/lib/node_modules/heroku is being purged from base /usr/local
+47 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku
+48 silly vacuum-fs purging /usr/local/lib/node_modules/heroku
+49 silly vacuum-fs quitting because other entries in /usr/local/lib/node_modules
+50 verbose tar unpack /Users/chris/.npm/heroku/0.1.3/package.tgz
+51 verbose tar unpacking to /usr/local/lib/node_modules/heroku
+52 silly gentlyRm /usr/local/lib/node_modules/heroku is being purged
+53 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku
+54 silly gunzTarPerm modes [ '755', '644' ]
+55 silly gunzTarPerm extractEntry package.json
+56 silly gunzTarPerm extractEntry .npmignore
+57 silly gunzTarPerm extractEntry README.md
+58 silly gunzTarPerm extractEntry Cakefile
+59 silly gunzTarPerm extractEntry lib/addons.js
+60 silly gunzTarPerm extractEntry lib/config_vars.js
+61 silly gunzTarPerm extractEntry lib/domains.js
+62 silly gunzTarPerm extractEntry lib/heroku.js
+63 silly gunzTarPerm extractEntry lib/keys.js
+64 silly gunzTarPerm extractEntry lib/collaborators.js
+65 silly gunzTarPerm extractEntry lib/pgbackups.js
+66 silly gunzTarPerm extractEntry lib/postgres-addon.js
+67 silly gunzTarPerm extractEntry lib/processes.js
+68 silly gunzTarPerm extractEntry lib/releases.js
+69 silly gunzTarPerm extractEntry lib/shared-postgresql.js
+70 silly gunzTarPerm extractEntry lib/apps.js
+71 silly gunzTarPerm extractEntry lib/stacks.js
+72 silly gunzTarPerm extractEntry lib/logs.js
+73 silly gunzTarPerm extractEntry misc/monkey.png
+74 silly gunzTarPerm extractEntry spec/apps.spec.coffee
+75 silly gunzTarPerm extractEntry src/keys.coffee
+76 silly gunzTarPerm extractEntry src/addons.coffee
+77 silly gunzTarPerm extractEntry src/collaborators.coffee
+78 silly gunzTarPerm extractEntry src/config_vars.coffee
+79 silly gunzTarPerm extractEntry src/domains.coffee
+80 silly gunzTarPerm extractEntry src/heroku.coffee
+81 silly gunzTarPerm extractEntry src/apps.coffee
+82 silly gunzTarPerm extractEntry src/logs.coffee
+83 silly gunzTarPerm extractEntry src/pgbackups.coffee
+84 silly gunzTarPerm extractEntry src/processes.coffee
+85 silly gunzTarPerm extractEntry src/releases.coffee
+86 silly gunzTarPerm extractEntry src/stacks.coffee
+87 verbose write writing to /usr/local/lib/node_modules/heroku/package.json
+88 info preinstall heroku@0.1.3
+89 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/package.json
+90 silly prepareForInstallMany adding coffee-script@1.6.3 from heroku dependencies
+91 silly prepareForInstallMany adding jasmine-node@1.10.2 from heroku dependencies
+92 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/package.json
+93 silly cache add args [ 'jasmine-node@1.10.2', null ]
+94 verbose cache add spec jasmine-node@1.10.2
+95 silly cache add parsed spec Result {
+95 silly cache add   raw: 'jasmine-node@1.10.2',
+95 silly cache add   scope: null,
+95 silly cache add   name: 'jasmine-node',
+95 silly cache add   rawSpec: '1.10.2',
+95 silly cache add   spec: '1.10.2',
+95 silly cache add   type: 'version' }
+96 silly addNamed jasmine-node@1.10.2
+97 verbose addNamed "1.10.2" is a plain semver version for jasmine-node
+98 silly mapToRegistry name jasmine-node
+99 silly mapToRegistry using default registry
+100 silly mapToRegistry registry https://registry.npmjs.org/
+101 silly mapToRegistry uri https://registry.npmjs.org/jasmine-node
+102 verbose addNameVersion registry:https://registry.npmjs.org/jasmine-node not in flight; fetching
+103 silly cache add args [ 'coffee-script@1.6.3', null ]
+104 verbose cache add spec coffee-script@1.6.3
+105 silly cache add parsed spec Result {
+105 silly cache add   raw: 'coffee-script@1.6.3',
+105 silly cache add   scope: null,
+105 silly cache add   name: 'coffee-script',
+105 silly cache add   rawSpec: '1.6.3',
+105 silly cache add   spec: '1.6.3',
+105 silly cache add   type: 'version' }
+106 silly addNamed coffee-script@1.6.3
+107 verbose addNamed "1.6.3" is a plain semver version for coffee-script
+108 silly mapToRegistry name coffee-script
+109 silly mapToRegistry using default registry
+110 silly mapToRegistry registry https://registry.npmjs.org/
+111 silly mapToRegistry uri https://registry.npmjs.org/coffee-script
+112 verbose addNameVersion registry:https://registry.npmjs.org/coffee-script not in flight; fetching
+113 verbose request uri https://registry.npmjs.org/coffee-script
+114 verbose request no auth needed
+115 info attempt registry request try #1 at 4:30:20 PM
+116 verbose etag "C7EGZ6DE7K5AT469X4UL6C5U9"
+117 http request GET https://registry.npmjs.org/coffee-script
+118 verbose request uri https://registry.npmjs.org/jasmine-node
+119 verbose request no auth needed
+120 info attempt registry request try #1 at 4:30:20 PM
+121 verbose etag "DUE3E1P62MI8II1D7WXZ7TBSO"
+122 http request GET https://registry.npmjs.org/jasmine-node
+123 http 304 https://registry.npmjs.org/jasmine-node
+124 verbose headers { date: 'Sun, 29 Nov 2015 23:30:20 GMT',
+124 verbose headers   via: '1.1 varnish',
+124 verbose headers   'cache-control': 'max-age=60',
+124 verbose headers   etag: '"DUE3E1P62MI8II1D7WXZ7TBSO"',
+124 verbose headers   age: '0',
+124 verbose headers   connection: 'keep-alive',
+124 verbose headers   'x-served-by': 'cache-sjc3126-SJC',
+124 verbose headers   'x-cache': 'HIT',
+124 verbose headers   'x-cache-hits': '1',
+124 verbose headers   'x-timer': 'S1448839820.788271,VS0,VE43',
+124 verbose headers   vary: 'Accept' }
+125 silly get cb [ 304,
+125 silly get   { date: 'Sun, 29 Nov 2015 23:30:20 GMT',
+125 silly get     via: '1.1 varnish',
+125 silly get     'cache-control': 'max-age=60',
+125 silly get     etag: '"DUE3E1P62MI8II1D7WXZ7TBSO"',
+125 silly get     age: '0',
+125 silly get     connection: 'keep-alive',
+125 silly get     'x-served-by': 'cache-sjc3126-SJC',
+125 silly get     'x-cache': 'HIT',
+125 silly get     'x-cache-hits': '1',
+125 silly get     'x-timer': 'S1448839820.788271,VS0,VE43',
+125 silly get     vary: 'Accept' } ]
+126 verbose etag https://registry.npmjs.org/jasmine-node from cache
+127 verbose get saving jasmine-node to /Users/chris/.npm/registry.npmjs.org/jasmine-node/.cache.json
+128 http 304 https://registry.npmjs.org/coffee-script
+129 verbose headers { date: 'Sun, 29 Nov 2015 23:30:20 GMT',
+129 verbose headers   via: '1.1 varnish',
+129 verbose headers   'cache-control': 'max-age=60',
+129 verbose headers   etag: '"C7EGZ6DE7K5AT469X4UL6C5U9"',
+129 verbose headers   age: '0',
+129 verbose headers   connection: 'keep-alive',
+129 verbose headers   'x-served-by': 'cache-sjc3124-SJC',
+129 verbose headers   'x-cache': 'HIT',
+129 verbose headers   'x-cache-hits': '1',
+129 verbose headers   'x-timer': 'S1448839820.788580,VS0,VE43',
+129 verbose headers   vary: 'Accept' }
+130 silly get cb [ 304,
+130 silly get   { date: 'Sun, 29 Nov 2015 23:30:20 GMT',
+130 silly get     via: '1.1 varnish',
+130 silly get     'cache-control': 'max-age=60',
+130 silly get     etag: '"C7EGZ6DE7K5AT469X4UL6C5U9"',
+130 silly get     age: '0',
+130 silly get     connection: 'keep-alive',
+130 silly get     'x-served-by': 'cache-sjc3124-SJC',
+130 silly get     'x-cache': 'HIT',
+130 silly get     'x-cache-hits': '1',
+130 silly get     'x-timer': 'S1448839820.788580,VS0,VE43',
+130 silly get     vary: 'Accept' } ]
+131 verbose etag https://registry.npmjs.org/coffee-script from cache
+132 verbose get saving coffee-script to /Users/chris/.npm/registry.npmjs.org/coffee-script/.cache.json
+133 silly cache afterAdd jasmine-node@1.10.2
+134 verbose afterAdd /Users/chris/.npm/jasmine-node/1.10.2/package/package.json not in flight; writing
+135 silly cache afterAdd coffee-script@1.6.3
+136 verbose afterAdd /Users/chris/.npm/coffee-script/1.6.3/package/package.json not in flight; writing
+137 verbose afterAdd /Users/chris/.npm/jasmine-node/1.10.2/package/package.json written
+138 verbose afterAdd /Users/chris/.npm/coffee-script/1.6.3/package/package.json written
+139 silly install resolved [ { name: 'jasmine-node',
+139 silly install resolved     version: '1.10.2',
+139 silly install resolved     description: 'DOM-less simple JavaScript BDD testing framework for Node',
+139 silly install resolved     contributors: [ [Object] ],
+139 silly install resolved     homepage: 'https://github.com/mhevery/jasmine-node',
+139 silly install resolved     repository:
+139 silly install resolved      { type: 'git',
+139 silly install resolved        url: 'git+https://github.com/mhevery/jasmine-node.git' },
+139 silly install resolved     keywords: [ 'testing', 'bdd' ],
+139 silly install resolved     author: { name: 'Misko Hevery', email: 'misko@hevery.com' },
+139 silly install resolved     maintainers: [ [Object], [Object] ],
+139 silly install resolved     licenses: [ 'MIT' ],
+139 silly install resolved     dependencies:
+139 silly install resolved      { 'coffee-script': '>=1.0.1',
+139 silly install resolved        'jasmine-reporters': '>=0.2.0',
+139 silly install resolved        requirejs: '>=0.27.1',
+139 silly install resolved        walkdir: '>= 0.0.1',
+139 silly install resolved        underscore: '>= 1.3.1',
+139 silly install resolved        gaze: '~0.3.2',
+139 silly install resolved        mkdirp: '~0.3.5' },
+139 silly install resolved     bin: { 'jasmine-node': 'bin/jasmine-node' },
+139 silly install resolved     preferGlobal: true,
+139 silly install resolved     main: 'lib/jasmine-node',
+139 silly install resolved     scripts: { test: 'node lib/jasmine-node/cli.js spec' },
+139 silly install resolved     devDependencies: {},
+139 silly install resolved     bugs: { url: 'https://github.com/mhevery/jasmine-node/issues' },
+139 silly install resolved     _id: 'jasmine-node@1.10.2',
+139 silly install resolved     dist:
+139 silly install resolved      { shasum: '4829c4226f827d5a55734154cbf39629a69be80f',
+139 silly install resolved        tarball: 'http://registry.npmjs.org/jasmine-node/-/jasmine-node-1.10.2.tgz' },
+139 silly install resolved     _from: 'jasmine-node@1.10.2',
+139 silly install resolved     _npmVersion: '1.2.32',
+139 silly install resolved     _npmUser: { name: 'tebriel', email: 'tebriel@gmail.com' },
+139 silly install resolved     directories: {},
+139 silly install resolved     _shasum: '4829c4226f827d5a55734154cbf39629a69be80f',
+139 silly install resolved     _resolved: 'https://registry.npmjs.org/jasmine-node/-/jasmine-node-1.10.2.tgz',
+139 silly install resolved     readme: 'ERROR: No README data found!' },
+139 silly install resolved   { name: 'coffee-script',
+139 silly install resolved     description: 'Unfancy JavaScript',
+139 silly install resolved     keywords: [ 'javascript', 'language', 'coffeescript', 'compiler' ],
+139 silly install resolved     author: { name: 'Jeremy Ashkenas' },
+139 silly install resolved     version: '1.6.3',
+139 silly install resolved     licenses: [ [Object] ],
+139 silly install resolved     engines: { node: '>=0.8.0' },
+139 silly install resolved     directories: { lib: './lib/coffee-script' },
+139 silly install resolved     main: './lib/coffee-script/coffee-script',
+139 silly install resolved     bin: { coffee: './bin/coffee', cake: './bin/cake' },
+139 silly install resolved     scripts: { test: 'node ./bin/cake test' },
+139 silly install resolved     homepage: 'http://coffeescript.org',
+139 silly install resolved     bugs: { url: 'https://github.com/jashkenas/coffee-script/issues' },
+139 silly install resolved     repository:
+139 silly install resolved      { type: 'git',
+139 silly install resolved        url: 'git://github.com/jashkenas/coffee-script.git' },
+139 silly install resolved     devDependencies: { 'uglify-js': '~2.2', jison: '>=0.2.0' },
+139 silly install resolved     _id: 'coffee-script@1.6.3',
+139 silly install resolved     dist:
+139 silly install resolved      { shasum: '6355d32cf1b04cdff6b484e5e711782b2f0c39be',
+139 silly install resolved        tarball: 'http://registry.npmjs.org/coffee-script/-/coffee-script-1.6.3.tgz' },
+139 silly install resolved     _from: 'coffee-script@1.6.3',
+139 silly install resolved     _npmVersion: '1.2.24',
+139 silly install resolved     _npmUser: { name: 'jashkenas', email: 'jashkenas@gmail.com' },
+139 silly install resolved     maintainers: [ [Object], [Object] ],
+139 silly install resolved     _shasum: '6355d32cf1b04cdff6b484e5e711782b2f0c39be',
+139 silly install resolved     _resolved: 'https://registry.npmjs.org/coffee-script/-/coffee-script-1.6.3.tgz',
+139 silly install resolved     readme: 'ERROR: No README data found!' } ]
+140 info install jasmine-node@1.10.2 into /usr/local/lib/node_modules/heroku
+141 info install coffee-script@1.6.3 into /usr/local/lib/node_modules/heroku
+142 info installOne jasmine-node@1.10.2
+143 verbose installOne of jasmine-node to /usr/local/lib/node_modules/heroku not in flight; installing
+144 info installOne coffee-script@1.6.3
+145 verbose installOne of coffee-script to /usr/local/lib/node_modules/heroku not in flight; installing
+146 verbose lock using /Users/chris/.npm/_locks/coffee-script-df37bfa75a8ca419.lock for /usr/local/lib/node_modules/heroku/node_modules/coffee-script
+147 verbose lock using /Users/chris/.npm/_locks/jasmine-node-38d1f620805b7dd5.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node
+148 silly install write writing coffee-script 1.6.3 to /usr/local/lib/node_modules/heroku/node_modules/coffee-script
+149 silly install write writing jasmine-node 1.10.2 to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node
+150 verbose unbuild lib/node_modules/heroku/node_modules/coffee-script
+151 verbose unbuild lib/node_modules/heroku/node_modules/jasmine-node
+152 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/coffee-script is being purged from base /usr/local
+153 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/coffee-script
+154 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node is being purged from base /usr/local
+155 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node
+156 verbose tar unpack /Users/chris/.npm/coffee-script/1.6.3/package.tgz
+157 verbose tar unpacking to /usr/local/lib/node_modules/heroku/node_modules/coffee-script
+158 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/coffee-script is being purged
+159 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/coffee-script
+160 verbose tar unpack /Users/chris/.npm/jasmine-node/1.10.2/package.tgz
+161 verbose tar unpacking to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node
+162 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node is being purged
+163 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node
+164 silly gunzTarPerm modes [ '755', '644' ]
+165 silly gunzTarPerm modes [ '755', '644' ]
+166 silly gunzTarPerm extractEntry package.json
+167 silly gunzTarPerm extractEntry package.json
+168 silly gunzTarPerm extractEntry .npmignore
+169 silly gunzTarPerm extractEntry README
+170 silly gunzTarPerm extractEntry .npmignore
+171 silly gunzTarPerm extractEntry README.md
+172 silly gunzTarPerm extractEntry LICENSE
+173 silly gunzTarPerm extractEntry CNAME
+174 silly gunzTarPerm extractEntry LICENSE
+175 silly gunzTarPerm extractEntry bin/jasmine-node
+176 silly gunzTarPerm extractEntry CONTRIBUTING.md
+177 silly gunzTarPerm extractEntry Rakefile
+178 silly gunzTarPerm extractEntry lib/jasmine-node/async-callback.js
+179 silly gunzTarPerm extractEntry lib/jasmine-node/cli.js
+180 silly gunzTarPerm extractEntry lib/jasmine-node/cs.js
+181 silly gunzTarPerm extractEntry lib/jasmine-node/index.js
+182 silly gunzTarPerm extractEntry lib/jasmine-node/autotest.js
+183 silly gunzTarPerm extractEntry lib/jasmine-node/reporter.js
+184 silly gunzTarPerm extractEntry lib/jasmine-node/requirejs-runner.js
+185 silly gunzTarPerm extractEntry lib/jasmine-node/requirejs-spec-loader.js
+186 silly gunzTarPerm extractEntry lib/jasmine-node/requirejs-wrapper-template.js
+187 silly gunzTarPerm extractEntry lib/jasmine-node/spec-collection.js
+188 silly gunzTarPerm extractEntry lib/jasmine-node/jasmine-1.3.1.js
+189 silly gunzTarPerm extractEntry .travis.yml
+190 silly gunzTarPerm extractEntry scripts/specs
+191 silly gunzTarPerm extractEntry spec/sample_helper.js
+192 silly gunzTarPerm extractEntry spec/reporter_spec.js
+193 silly gunzTarPerm extractEntry spec/nested.js/NestedSpec.js
+194 silly gunzTarPerm extractEntry spec/SampleSpecs.js
+195 silly gunzTarPerm extractEntry spec/TestSpec.js
+196 silly gunzTarPerm extractEntry spec/TimerSpec.js
+197 silly gunzTarPerm extractEntry spec/helper_spec.js
+198 silly gunzTarPerm extractEntry spec/async-callback_spec.js
+199 silly gunzTarPerm extractEntry spec/CoffeeSpec.coffee
+200 silly gunzTarPerm extractEntry spec/litcoffee/Litcoffee.spec.litcoffee
+201 silly gunzTarPerm extractEntry spec/nested/NestedSpec.js
+202 silly gunzTarPerm extractEntry spec/nested/uber-nested/UberNestedSpec.js
+203 silly gunzTarPerm extractEntry spec/HelperSpec.coffee
+204 silly gunzTarPerm extractEntry spec/GrammarHelper.coffee
+205 silly gunzTarPerm extractEntry spec/AsyncSpec.coffee
+206 silly gunzTarPerm extractEntry spec-requirejs/requirejs-setup.js
+207 silly gunzTarPerm extractEntry spec-requirejs/requirejs-wrapper-template.js
+208 silly gunzTarPerm extractEntry spec-requirejs/requirejs.spec.js
+209 silly gunzTarPerm extractEntry spec-requirejs/requirejs.sut.js
+210 silly gunzTarPerm extractEntry spec-requirejs-coffee/requirejs-setup.js
+211 silly gunzTarPerm extractEntry spec-requirejs-coffee/RequireCsSpec.coffee
+212 silly gunzTarPerm extractEntry spec-requirejs-coffee/RequireJsSpec.coffee
+213 silly gunzTarPerm extractEntry spec-requirejs-coffee/requirecs.sut.coffee
+214 silly gunzTarPerm extractEntry specs.sh
+215 silly gunzTarPerm extractEntry bin/cake
+216 silly gunzTarPerm extractEntry bin/coffee
+217 silly gunzTarPerm extractEntry lib/coffee-script/browser.js
+218 silly gunzTarPerm extractEntry lib/coffee-script/grammar.js
+219 silly gunzTarPerm extractEntry lib/coffee-script/helpers.js
+220 silly gunzTarPerm extractEntry lib/coffee-script/index.js
+221 silly gunzTarPerm extractEntry lib/coffee-script/command.js
+222 silly gunzTarPerm extractEntry lib/coffee-script/nodes.js
+223 silly gunzTarPerm extractEntry lib/coffee-script/optparse.js
+224 silly gunzTarPerm extractEntry lib/coffee-script/parser.js
+225 silly gunzTarPerm extractEntry lib/coffee-script/repl.js
+226 silly gunzTarPerm extractEntry lib/coffee-script/rewriter.js
+227 silly gunzTarPerm extractEntry lib/coffee-script/coffee-script.js
+228 silly gunzTarPerm extractEntry lib/coffee-script/scope.js
+229 silly gunzTarPerm extractEntry lib/coffee-script/cake.js
+230 silly gunzTarPerm extractEntry lib/coffee-script/sourcemap.js
+231 silly gunzTarPerm extractEntry lib/coffee-script/lexer.js
+232 verbose write writing to /usr/local/lib/node_modules/heroku/node_modules/coffee-script/package.json
+233 info preinstall coffee-script@1.6.3
+234 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/coffee-script/package.json
+235 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/coffee-script/package.json
+236 silly install resolved []
+237 verbose about to build /usr/local/lib/node_modules/heroku/node_modules/coffee-script
+238 info build /usr/local/lib/node_modules/heroku/node_modules/coffee-script
+239 info linkStuff coffee-script@1.6.3
+240 silly linkStuff coffee-script@1.6.3 has /usr/local/lib/node_modules/heroku/node_modules as its parent node_modules
+241 silly linkStuff coffee-script@1.6.3 is part of a global install
+242 silly linkStuff coffee-script@1.6.3 is installed into a global node_modules
+243 verbose linkBins coffee-script@1.6.3
+244 verbose link bins [ { coffee: './bin/coffee', cake: './bin/cake' },
+244 verbose link bins   '/usr/local/lib/node_modules/heroku/node_modules/.bin',
+244 verbose link bins   false ]
+245 verbose linkMans coffee-script@1.6.3
+246 verbose rebuildBundles coffee-script@1.6.3
+247 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/.bin/coffee is being purged
+248 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/.bin/coffee
+249 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/.bin/cake is being purged
+250 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/.bin/cake
+251 info install coffee-script@1.6.3
+252 info postinstall coffee-script@1.6.3
+253 verbose unlock done using /Users/chris/.npm/_locks/coffee-script-df37bfa75a8ca419.lock for /usr/local/lib/node_modules/heroku/node_modules/coffee-script
+254 verbose write writing to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/package.json
+255 info preinstall jasmine-node@1.10.2
+256 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/package.json
+257 silly prepareForInstallMany adding jasmine-reporters@>=0.2.0 from jasmine-node dependencies
+258 silly prepareForInstallMany adding requirejs@>=0.27.1 from jasmine-node dependencies
+259 silly prepareForInstallMany adding walkdir@>= 0.0.1 from jasmine-node dependencies
+260 silly prepareForInstallMany adding underscore@>= 1.3.1 from jasmine-node dependencies
+261 silly prepareForInstallMany adding gaze@~0.3.2 from jasmine-node dependencies
+262 silly prepareForInstallMany adding mkdirp@~0.3.5 from jasmine-node dependencies
+263 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/package.json
+264 silly cache add args [ 'walkdir@>= 0.0.1', null ]
+265 verbose cache add spec walkdir@>= 0.0.1
+266 silly cache add parsed spec Result {
+266 silly cache add   raw: 'walkdir@>= 0.0.1',
+266 silly cache add   scope: null,
+266 silly cache add   name: 'walkdir',
+266 silly cache add   rawSpec: '>= 0.0.1',
+266 silly cache add   spec: '>=0.0.1',
+266 silly cache add   type: 'range' }
+267 silly addNamed walkdir@>=0.0.1
+268 verbose addNamed ">=0.0.1" is a valid semver range for walkdir
+269 silly addNameRange { name: 'walkdir', range: '>=0.0.1', hasData: false }
+270 silly mapToRegistry name walkdir
+271 silly mapToRegistry using default registry
+272 silly mapToRegistry registry https://registry.npmjs.org/
+273 silly mapToRegistry uri https://registry.npmjs.org/walkdir
+274 verbose addNameRange registry:https://registry.npmjs.org/walkdir not in flight; fetching
+275 silly cache add args [ 'underscore@>= 1.3.1', null ]
+276 verbose cache add spec underscore@>= 1.3.1
+277 silly cache add parsed spec Result {
+277 silly cache add   raw: 'underscore@>= 1.3.1',
+277 silly cache add   scope: null,
+277 silly cache add   name: 'underscore',
+277 silly cache add   rawSpec: '>= 1.3.1',
+277 silly cache add   spec: '>=1.3.1',
+277 silly cache add   type: 'range' }
+278 silly addNamed underscore@>=1.3.1
+279 verbose addNamed ">=1.3.1" is a valid semver range for underscore
+280 silly addNameRange { name: 'underscore', range: '>=1.3.1', hasData: false }
+281 silly mapToRegistry name underscore
+282 silly mapToRegistry using default registry
+283 silly mapToRegistry registry https://registry.npmjs.org/
+284 silly mapToRegistry uri https://registry.npmjs.org/underscore
+285 verbose addNameRange registry:https://registry.npmjs.org/underscore not in flight; fetching
+286 silly cache add args [ 'gaze@~0.3.2', null ]
+287 verbose cache add spec gaze@~0.3.2
+288 silly cache add parsed spec Result {
+288 silly cache add   raw: 'gaze@~0.3.2',
+288 silly cache add   scope: null,
+288 silly cache add   name: 'gaze',
+288 silly cache add   rawSpec: '~0.3.2',
+288 silly cache add   spec: '>=0.3.2 <0.4.0',
+288 silly cache add   type: 'range' }
+289 silly addNamed gaze@>=0.3.2 <0.4.0
+290 verbose addNamed ">=0.3.2 <0.4.0" is a valid semver range for gaze
+291 silly addNameRange { name: 'gaze', range: '>=0.3.2 <0.4.0', hasData: false }
+292 silly mapToRegistry name gaze
+293 silly mapToRegistry using default registry
+294 silly mapToRegistry registry https://registry.npmjs.org/
+295 silly mapToRegistry uri https://registry.npmjs.org/gaze
+296 verbose addNameRange registry:https://registry.npmjs.org/gaze not in flight; fetching
+297 verbose request uri https://registry.npmjs.org/walkdir
+298 verbose request no auth needed
+299 info attempt registry request try #1 at 4:30:20 PM
+300 verbose etag "1M9Q3W9DFM0B5CAZO3FX1D71K"
+301 http request GET https://registry.npmjs.org/walkdir
+302 silly cache add args [ 'mkdirp@~0.3.5', null ]
+303 verbose cache add spec mkdirp@~0.3.5
+304 silly cache add parsed spec Result {
+304 silly cache add   raw: 'mkdirp@~0.3.5',
+304 silly cache add   scope: null,
+304 silly cache add   name: 'mkdirp',
+304 silly cache add   rawSpec: '~0.3.5',
+304 silly cache add   spec: '>=0.3.5 <0.4.0',
+304 silly cache add   type: 'range' }
+305 silly addNamed mkdirp@>=0.3.5 <0.4.0
+306 verbose addNamed ">=0.3.5 <0.4.0" is a valid semver range for mkdirp
+307 silly addNameRange { name: 'mkdirp', range: '>=0.3.5 <0.4.0', hasData: false }
+308 silly mapToRegistry name mkdirp
+309 silly mapToRegistry using default registry
+310 silly mapToRegistry registry https://registry.npmjs.org/
+311 silly mapToRegistry uri https://registry.npmjs.org/mkdirp
+312 verbose addNameRange registry:https://registry.npmjs.org/mkdirp not in flight; fetching
+313 silly cache add args [ 'jasmine-reporters@>=0.2.0', null ]
+314 verbose cache add spec jasmine-reporters@>=0.2.0
+315 silly cache add parsed spec Result {
+315 silly cache add   raw: 'jasmine-reporters@>=0.2.0',
+315 silly cache add   scope: null,
+315 silly cache add   name: 'jasmine-reporters',
+315 silly cache add   rawSpec: '>=0.2.0',
+315 silly cache add   spec: '>=0.2.0',
+315 silly cache add   type: 'range' }
+316 silly addNamed jasmine-reporters@>=0.2.0
+317 verbose addNamed ">=0.2.0" is a valid semver range for jasmine-reporters
+318 silly addNameRange { name: 'jasmine-reporters', range: '>=0.2.0', hasData: false }
+319 silly mapToRegistry name jasmine-reporters
+320 silly mapToRegistry using default registry
+321 silly mapToRegistry registry https://registry.npmjs.org/
+322 silly mapToRegistry uri https://registry.npmjs.org/jasmine-reporters
+323 verbose addNameRange registry:https://registry.npmjs.org/jasmine-reporters not in flight; fetching
+324 silly cache add args [ 'requirejs@>=0.27.1', null ]
+325 verbose cache add spec requirejs@>=0.27.1
+326 silly cache add parsed spec Result {
+326 silly cache add   raw: 'requirejs@>=0.27.1',
+326 silly cache add   scope: null,
+326 silly cache add   name: 'requirejs',
+326 silly cache add   rawSpec: '>=0.27.1',
+326 silly cache add   spec: '>=0.27.1',
+326 silly cache add   type: 'range' }
+327 silly addNamed requirejs@>=0.27.1
+328 verbose addNamed ">=0.27.1" is a valid semver range for requirejs
+329 silly addNameRange { name: 'requirejs', range: '>=0.27.1', hasData: false }
+330 silly mapToRegistry name requirejs
+331 silly mapToRegistry using default registry
+332 silly mapToRegistry registry https://registry.npmjs.org/
+333 silly mapToRegistry uri https://registry.npmjs.org/requirejs
+334 verbose addNameRange registry:https://registry.npmjs.org/requirejs not in flight; fetching
+335 verbose request uri https://registry.npmjs.org/underscore
+336 verbose request no auth needed
+337 info attempt registry request try #1 at 4:30:20 PM
+338 verbose etag "86N4VTQ6LWF71TWEBEBXJB5NV"
+339 http request GET https://registry.npmjs.org/underscore
+340 verbose request uri https://registry.npmjs.org/gaze
+341 verbose request no auth needed
+342 info attempt registry request try #1 at 4:30:20 PM
+343 verbose etag "8LVTN7FE3K1ZI518JH6BVSA6O"
+344 http request GET https://registry.npmjs.org/gaze
+345 verbose request uri https://registry.npmjs.org/jasmine-reporters
+346 verbose request no auth needed
+347 info attempt registry request try #1 at 4:30:20 PM
+348 verbose etag "CB6W1M5AMNDJ6OSWJUFFPKRLT"
+349 http request GET https://registry.npmjs.org/jasmine-reporters
+350 verbose request uri https://registry.npmjs.org/mkdirp
+351 verbose request no auth needed
+352 info attempt registry request try #1 at 4:30:20 PM
+353 verbose etag "D0P1TLPCMHM0DGH22NY9293OQ"
+354 http request GET https://registry.npmjs.org/mkdirp
+355 verbose request uri https://registry.npmjs.org/requirejs
+356 verbose request no auth needed
+357 info attempt registry request try #1 at 4:30:20 PM
+358 verbose etag "5QOQJKWXFBQK63DATO5FN1NAN"
+359 http request GET https://registry.npmjs.org/requirejs
+360 http 304 https://registry.npmjs.org/gaze
+361 verbose headers { date: 'Sun, 29 Nov 2015 23:30:21 GMT',
+361 verbose headers   via: '1.1 varnish',
+361 verbose headers   'cache-control': 'max-age=60',
+361 verbose headers   etag: '"8LVTN7FE3K1ZI518JH6BVSA6O"',
+361 verbose headers   age: '49',
+361 verbose headers   connection: 'keep-alive',
+361 verbose headers   'x-served-by': 'cache-sjc3122-SJC',
+361 verbose headers   'x-cache': 'HIT',
+361 verbose headers   'x-cache-hits': '2',
+361 verbose headers   'x-timer': 'S1448839821.219923,VS0,VE0',
+361 verbose headers   vary: 'Accept' }
+362 silly get cb [ 304,
+362 silly get   { date: 'Sun, 29 Nov 2015 23:30:21 GMT',
+362 silly get     via: '1.1 varnish',
+362 silly get     'cache-control': 'max-age=60',
+362 silly get     etag: '"8LVTN7FE3K1ZI518JH6BVSA6O"',
+362 silly get     age: '49',
+362 silly get     connection: 'keep-alive',
+362 silly get     'x-served-by': 'cache-sjc3122-SJC',
+362 silly get     'x-cache': 'HIT',
+362 silly get     'x-cache-hits': '2',
+362 silly get     'x-timer': 'S1448839821.219923,VS0,VE0',
+362 silly get     vary: 'Accept' } ]
+363 verbose etag https://registry.npmjs.org/gaze from cache
+364 verbose get saving gaze to /Users/chris/.npm/registry.npmjs.org/gaze/.cache.json
+365 silly addNameRange number 2 { name: 'gaze', range: '>=0.3.2 <0.4.0', hasData: true }
+366 silly addNameRange versions [ 'gaze',
+366 silly addNameRange   [ '0.1.0',
+366 silly addNameRange     '0.1.1',
+366 silly addNameRange     '0.1.2',
+366 silly addNameRange     '0.1.3',
+366 silly addNameRange     '0.1.4',
+366 silly addNameRange     '0.1.5',
+366 silly addNameRange     '0.1.6',
+366 silly addNameRange     '0.2.0',
+366 silly addNameRange     '0.2.1',
+366 silly addNameRange     '0.2.2',
+366 silly addNameRange     '0.3.0',
+366 silly addNameRange     '0.3.1',
+366 silly addNameRange     '0.3.2',
+366 silly addNameRange     '0.3.3',
+366 silly addNameRange     '0.3.4',
+366 silly addNameRange     '0.4.0',
+366 silly addNameRange     '0.4.1',
+366 silly addNameRange     '0.4.2',
+366 silly addNameRange     '0.4.3',
+366 silly addNameRange     '0.5.0',
+366 silly addNameRange     '0.5.1',
+366 silly addNameRange     '0.6.0',
+366 silly addNameRange     '0.6.1',
+366 silly addNameRange     '0.6.2',
+366 silly addNameRange     '0.6.3',
+366 silly addNameRange     '0.6.4',
+366 silly addNameRange     '0.5.2' ] ]
+367 silly addNamed gaze@0.3.4
+368 verbose addNamed "0.3.4" is a plain semver version for gaze
+369 silly cache afterAdd gaze@0.3.4
+370 verbose afterAdd /Users/chris/.npm/gaze/0.3.4/package/package.json not in flight; writing
+371 verbose afterAdd /Users/chris/.npm/gaze/0.3.4/package/package.json written
+372 http 304 https://registry.npmjs.org/mkdirp
+373 verbose headers { date: 'Sun, 29 Nov 2015 23:30:21 GMT',
+373 verbose headers   via: '1.1 varnish',
+373 verbose headers   'cache-control': 'max-age=60',
+373 verbose headers   etag: '"D0P1TLPCMHM0DGH22NY9293OQ"',
+373 verbose headers   age: '17',
+373 verbose headers   connection: 'keep-alive',
+373 verbose headers   'x-served-by': 'cache-sjc3120-SJC',
+373 verbose headers   'x-cache': 'HIT',
+373 verbose headers   'x-cache-hits': '1',
+373 verbose headers   'x-timer': 'S1448839821.244484,VS0,VE0',
+373 verbose headers   vary: 'Accept' }
+374 silly get cb [ 304,
+374 silly get   { date: 'Sun, 29 Nov 2015 23:30:21 GMT',
+374 silly get     via: '1.1 varnish',
+374 silly get     'cache-control': 'max-age=60',
+374 silly get     etag: '"D0P1TLPCMHM0DGH22NY9293OQ"',
+374 silly get     age: '17',
+374 silly get     connection: 'keep-alive',
+374 silly get     'x-served-by': 'cache-sjc3120-SJC',
+374 silly get     'x-cache': 'HIT',
+374 silly get     'x-cache-hits': '1',
+374 silly get     'x-timer': 'S1448839821.244484,VS0,VE0',
+374 silly get     vary: 'Accept' } ]
+375 verbose etag https://registry.npmjs.org/mkdirp from cache
+376 verbose get saving mkdirp to /Users/chris/.npm/registry.npmjs.org/mkdirp/.cache.json
+377 http 304 https://registry.npmjs.org/walkdir
+378 verbose headers { date: 'Sun, 29 Nov 2015 23:30:21 GMT',
+378 verbose headers   via: '1.1 varnish',
+378 verbose headers   'cache-control': 'max-age=60',
+378 verbose headers   etag: '"1M9Q3W9DFM0B5CAZO3FX1D71K"',
+378 verbose headers   age: '0',
+378 verbose headers   connection: 'keep-alive',
+378 verbose headers   'x-served-by': 'cache-sjc3127-SJC',
+378 verbose headers   'x-cache': 'HIT',
+378 verbose headers   'x-cache-hits': '1',
+378 verbose headers   'x-timer': 'S1448839821.215796,VS0,VE37',
+378 verbose headers   vary: 'Accept' }
+379 silly get cb [ 304,
+379 silly get   { date: 'Sun, 29 Nov 2015 23:30:21 GMT',
+379 silly get     via: '1.1 varnish',
+379 silly get     'cache-control': 'max-age=60',
+379 silly get     etag: '"1M9Q3W9DFM0B5CAZO3FX1D71K"',
+379 silly get     age: '0',
+379 silly get     connection: 'keep-alive',
+379 silly get     'x-served-by': 'cache-sjc3127-SJC',
+379 silly get     'x-cache': 'HIT',
+379 silly get     'x-cache-hits': '1',
+379 silly get     'x-timer': 'S1448839821.215796,VS0,VE37',
+379 silly get     vary: 'Accept' } ]
+380 verbose etag https://registry.npmjs.org/walkdir from cache
+381 verbose get saving walkdir to /Users/chris/.npm/registry.npmjs.org/walkdir/.cache.json
+382 http 304 https://registry.npmjs.org/underscore
+383 verbose headers { date: 'Sun, 29 Nov 2015 23:30:21 GMT',
+383 verbose headers   via: '1.1 varnish',
+383 verbose headers   'cache-control': 'max-age=60',
+383 verbose headers   etag: '"86N4VTQ6LWF71TWEBEBXJB5NV"',
+383 verbose headers   age: '49',
+383 verbose headers   connection: 'keep-alive',
+383 verbose headers   'x-served-by': 'cache-sjc3128-SJC',
+383 verbose headers   'x-cache': 'HIT',
+383 verbose headers   'x-cache-hits': '1',
+383 verbose headers   'x-timer': 'S1448839821.258558,VS0,VE0',
+383 verbose headers   vary: 'Accept' }
+384 silly get cb [ 304,
+384 silly get   { date: 'Sun, 29 Nov 2015 23:30:21 GMT',
+384 silly get     via: '1.1 varnish',
+384 silly get     'cache-control': 'max-age=60',
+384 silly get     etag: '"86N4VTQ6LWF71TWEBEBXJB5NV"',
+384 silly get     age: '49',
+384 silly get     connection: 'keep-alive',
+384 silly get     'x-served-by': 'cache-sjc3128-SJC',
+384 silly get     'x-cache': 'HIT',
+384 silly get     'x-cache-hits': '1',
+384 silly get     'x-timer': 'S1448839821.258558,VS0,VE0',
+384 silly get     vary: 'Accept' } ]
+385 verbose etag https://registry.npmjs.org/underscore from cache
+386 verbose get saving underscore to /Users/chris/.npm/registry.npmjs.org/underscore/.cache.json
+387 http 304 https://registry.npmjs.org/jasmine-reporters
+388 verbose headers { date: 'Sun, 29 Nov 2015 23:30:21 GMT',
+388 verbose headers   via: '1.1 varnish',
+388 verbose headers   'cache-control': 'max-age=60',
+388 verbose headers   etag: '"CB6W1M5AMNDJ6OSWJUFFPKRLT"',
+388 verbose headers   age: '0',
+388 verbose headers   connection: 'keep-alive',
+388 verbose headers   'x-served-by': 'cache-sjc3132-SJC',
+388 verbose headers   'x-cache': 'HIT',
+388 verbose headers   'x-cache-hits': '1',
+388 verbose headers   'x-timer': 'S1448839821.218996,VS0,VE42',
+388 verbose headers   vary: 'Accept' }
+389 silly get cb [ 304,
+389 silly get   { date: 'Sun, 29 Nov 2015 23:30:21 GMT',
+389 silly get     via: '1.1 varnish',
+389 silly get     'cache-control': 'max-age=60',
+389 silly get     etag: '"CB6W1M5AMNDJ6OSWJUFFPKRLT"',
+389 silly get     age: '0',
+389 silly get     connection: 'keep-alive',
+389 silly get     'x-served-by': 'cache-sjc3132-SJC',
+389 silly get     'x-cache': 'HIT',
+389 silly get     'x-cache-hits': '1',
+389 silly get     'x-timer': 'S1448839821.218996,VS0,VE42',
+389 silly get     vary: 'Accept' } ]
+390 verbose etag https://registry.npmjs.org/jasmine-reporters from cache
+391 verbose get saving jasmine-reporters to /Users/chris/.npm/registry.npmjs.org/jasmine-reporters/.cache.json
+392 silly addNameRange number 2 { name: 'mkdirp', range: '>=0.3.5 <0.4.0', hasData: true }
+393 silly addNameRange versions [ 'mkdirp',
+393 silly addNameRange   [ '0.0.1',
+393 silly addNameRange     '0.0.2',
+393 silly addNameRange     '0.0.3',
+393 silly addNameRange     '0.0.4',
+393 silly addNameRange     '0.0.5',
+393 silly addNameRange     '0.0.6',
+393 silly addNameRange     '0.0.7',
+393 silly addNameRange     '0.1.0',
+393 silly addNameRange     '0.2.0',
+393 silly addNameRange     '0.2.1',
+393 silly addNameRange     '0.2.2',
+393 silly addNameRange     '0.3.0',
+393 silly addNameRange     '0.3.1',
+393 silly addNameRange     '0.3.2',
+393 silly addNameRange     '0.3.3',
+393 silly addNameRange     '0.3.4',
+393 silly addNameRange     '0.3.5',
+393 silly addNameRange     '0.4.0',
+393 silly addNameRange     '0.4.1',
+393 silly addNameRange     '0.4.2',
+393 silly addNameRange     '0.5.0',
+393 silly addNameRange     '0.5.1' ] ]
+394 silly addNamed mkdirp@0.3.5
+395 verbose addNamed "0.3.5" is a plain semver version for mkdirp
+396 silly addNameRange number 2 { name: 'walkdir', range: '>=0.0.1', hasData: true }
+397 silly addNameRange versions [ 'walkdir',
+397 silly addNameRange   [ '0.0.1',
+397 silly addNameRange     '0.0.2',
+397 silly addNameRange     '0.0.3',
+397 silly addNameRange     '0.0.4',
+397 silly addNameRange     '0.0.5',
+397 silly addNameRange     '0.0.7',
+397 silly addNameRange     '0.0.8',
+397 silly addNameRange     '0.0.9',
+397 silly addNameRange     '0.0.10',
+397 silly addNameRange     '0.0.11' ] ]
+398 silly addNamed walkdir@0.0.11
+399 verbose addNamed "0.0.11" is a plain semver version for walkdir
+400 silly addNameRange number 2 { name: 'underscore', range: '>=1.3.1', hasData: true }
+401 silly addNameRange versions [ 'underscore',
+401 silly addNameRange   [ '1.0.3',
+401 silly addNameRange     '1.0.4',
+401 silly addNameRange     '1.1.0',
+401 silly addNameRange     '1.1.1',
+401 silly addNameRange     '1.1.2',
+401 silly addNameRange     '1.1.3',
+401 silly addNameRange     '1.1.4',
+401 silly addNameRange     '1.1.5',
+401 silly addNameRange     '1.1.6',
+401 silly addNameRange     '1.1.7',
+401 silly addNameRange     '1.2.0',
+401 silly addNameRange     '1.2.1',
+401 silly addNameRange     '1.2.2',
+401 silly addNameRange     '1.2.3',
+401 silly addNameRange     '1.2.4',
+401 silly addNameRange     '1.3.0',
+401 silly addNameRange     '1.3.1',
+401 silly addNameRange     '1.3.2',
+401 silly addNameRange     '1.3.3',
+401 silly addNameRange     '1.4.0',
+401 silly addNameRange     '1.4.1',
+401 silly addNameRange     '1.4.2',
+401 silly addNameRange     '1.4.3',
+401 silly addNameRange     '1.4.4',
+401 silly addNameRange     '1.5.0',
+401 silly addNameRange     '1.5.1',
+401 silly addNameRange     '1.5.2',
+401 silly addNameRange     '1.6.0',
+401 silly addNameRange     '1.7.0',
+401 silly addNameRange     '1.8.0',
+401 silly addNameRange     '1.8.1',
+401 silly addNameRange     '1.8.2',
+401 silly addNameRange     '1.8.3' ] ]
+402 silly addNamed underscore@1.8.3
+403 verbose addNamed "1.8.3" is a plain semver version for underscore
+404 silly addNameRange number 2 { name: 'jasmine-reporters', range: '>=0.2.0', hasData: true }
+405 silly addNameRange versions [ 'jasmine-reporters',
+405 silly addNameRange   [ '0.1.0',
+405 silly addNameRange     '0.2.0',
+405 silly addNameRange     '0.2.1',
+405 silly addNameRange     '0.3.0',
+405 silly addNameRange     '0.3.2',
+405 silly addNameRange     '0.4.0',
+405 silly addNameRange     '0.4.1',
+405 silly addNameRange     '1.0.0',
+405 silly addNameRange     '2.0.0',
+405 silly addNameRange     '2.0.1',
+405 silly addNameRange     '2.0.2',
+405 silly addNameRange     '2.0.3',
+405 silly addNameRange     '1.0.1',
+405 silly addNameRange     '2.0.4',
+405 silly addNameRange     '2.0.5',
+405 silly addNameRange     '1.0.2',
+405 silly addNameRange     '2.0.6',
+405 silly addNameRange     '2.0.7' ] ]
+406 silly addNamed jasmine-reporters@2.0.7
+407 verbose addNamed "2.0.7" is a plain semver version for jasmine-reporters
+408 silly cache afterAdd walkdir@0.0.11
+409 verbose afterAdd /Users/chris/.npm/walkdir/0.0.11/package/package.json not in flight; writing
+410 silly cache afterAdd mkdirp@0.3.5
+411 verbose afterAdd /Users/chris/.npm/mkdirp/0.3.5/package/package.json not in flight; writing
+412 silly cache afterAdd underscore@1.8.3
+413 verbose afterAdd /Users/chris/.npm/underscore/1.8.3/package/package.json not in flight; writing
+414 silly cache afterAdd jasmine-reporters@2.0.7
+415 verbose afterAdd /Users/chris/.npm/jasmine-reporters/2.0.7/package/package.json not in flight; writing
+416 verbose afterAdd /Users/chris/.npm/walkdir/0.0.11/package/package.json written
+417 verbose afterAdd /Users/chris/.npm/mkdirp/0.3.5/package/package.json written
+418 verbose afterAdd /Users/chris/.npm/underscore/1.8.3/package/package.json written
+419 verbose afterAdd /Users/chris/.npm/jasmine-reporters/2.0.7/package/package.json written
+420 http 304 https://registry.npmjs.org/requirejs
+421 verbose headers { date: 'Sun, 29 Nov 2015 23:30:21 GMT',
+421 verbose headers   via: '1.1 varnish',
+421 verbose headers   'cache-control': 'max-age=60',
+421 verbose headers   etag: '"5QOQJKWXFBQK63DATO5FN1NAN"',
+421 verbose headers   age: '57',
+421 verbose headers   connection: 'keep-alive',
+421 verbose headers   'x-served-by': 'cache-sjc3132-SJC',
+421 verbose headers   'x-cache': 'HIT',
+421 verbose headers   'x-cache-hits': '2',
+421 verbose headers   'x-timer': 'S1448839821.282568,VS0,VE0',
+421 verbose headers   vary: 'Accept' }
+422 silly get cb [ 304,
+422 silly get   { date: 'Sun, 29 Nov 2015 23:30:21 GMT',
+422 silly get     via: '1.1 varnish',
+422 silly get     'cache-control': 'max-age=60',
+422 silly get     etag: '"5QOQJKWXFBQK63DATO5FN1NAN"',
+422 silly get     age: '57',
+422 silly get     connection: 'keep-alive',
+422 silly get     'x-served-by': 'cache-sjc3132-SJC',
+422 silly get     'x-cache': 'HIT',
+422 silly get     'x-cache-hits': '2',
+422 silly get     'x-timer': 'S1448839821.282568,VS0,VE0',
+422 silly get     vary: 'Accept' } ]
+423 verbose etag https://registry.npmjs.org/requirejs from cache
+424 verbose get saving requirejs to /Users/chris/.npm/registry.npmjs.org/requirejs/.cache.json
+425 silly addNameRange number 2 { name: 'requirejs', range: '>=0.27.1', hasData: true }
+426 silly addNameRange versions [ 'requirejs',
+426 silly addNameRange   [ '0.26.0',
+426 silly addNameRange     '0.27.0',
+426 silly addNameRange     '0.27.1',
+426 silly addNameRange     '1.0.0',
+426 silly addNameRange     '1.0.1',
+426 silly addNameRange     '1.0.2',
+426 silly addNameRange     '1.0.3',
+426 silly addNameRange     '1.0.4',
+426 silly addNameRange     '1.0.5',
+426 silly addNameRange     '1.0.6',
+426 silly addNameRange     '1.0.7',
+426 silly addNameRange     '1.0.8',
+426 silly addNameRange     '2.0.0',
+426 silly addNameRange     '2.0.1',
+426 silly addNameRange     '2.0.2',
+426 silly addNameRange     '2.0.3',
+426 silly addNameRange     '2.0.4',
+426 silly addNameRange     '2.0.5',
+426 silly addNameRange     '2.0.6',
+426 silly addNameRange     '2.1.0',
+426 silly addNameRange     '2.1.1',
+426 silly addNameRange     '2.1.2',
+426 silly addNameRange     '2.1.3',
+426 silly addNameRange     '2.1.4',
+426 silly addNameRange     '2.1.5',
+426 silly addNameRange     '2.1.6',
+426 silly addNameRange     '2.1.7',
+426 silly addNameRange     '2.1.8',
+426 silly addNameRange     '2.1.9',
+426 silly addNameRange     '2.1.10',
+426 silly addNameRange     '2.1.11',
+426 silly addNameRange     '2.1.12',
+426 silly addNameRange     '2.1.13',
+426 silly addNameRange     '2.1.14',
+426 silly addNameRange     '2.1.15',
+426 silly addNameRange     '2.1.16',
+426 silly addNameRange     '2.1.17',
+426 silly addNameRange     '2.1.18',
+426 silly addNameRange     '2.1.19',
+426 silly addNameRange     '2.1.20',
+426 silly addNameRange     '2.1.21',
+426 silly addNameRange     '2.1.22' ] ]
+427 silly addNamed requirejs@2.1.22
+428 verbose addNamed "2.1.22" is a plain semver version for requirejs
+429 silly cache afterAdd requirejs@2.1.22
+430 verbose afterAdd /Users/chris/.npm/requirejs/2.1.22/package/package.json not in flight; writing
+431 verbose afterAdd /Users/chris/.npm/requirejs/2.1.22/package/package.json written
+432 silly install resolved [ { name: 'gaze',
+432 silly install resolved     description: 'A globbing fs.watch wrapper built from the best parts of other fine watch libs.',
+432 silly install resolved     version: '0.3.4',
+432 silly install resolved     homepage: 'https://github.com/shama/gaze',
+432 silly install resolved     author: { name: 'Kyle Robinson Young', email: 'kyle@dontkry.com' },
+432 silly install resolved     repository: { type: 'git', url: 'git://github.com/shama/gaze.git' },
+432 silly install resolved     bugs: { url: 'https://github.com/shama/gaze/issues' },
+432 silly install resolved     licenses: [ [Object] ],
+432 silly install resolved     main: 'lib/gaze',
+432 silly install resolved     engines: { node: '>= 0.6.0' },
+432 silly install resolved     scripts: { test: 'grunt nodeunit -v' },
+432 silly install resolved     dependencies: { minimatch: '~0.2.9', fileset: '~0.1.5' },
+432 silly install resolved     devDependencies:
+432 silly install resolved      { grunt: '~0.4.0rc7',
+432 silly install resolved        'grunt-contrib-nodeunit': '~0.1.2rc6',
+432 silly install resolved        'grunt-contrib-jshint': '~0.1.1rc6',
+432 silly install resolved        'grunt-benchmark': '~0.1.1' },
+432 silly install resolved     keywords: [ 'watch', 'glob' ],
+432 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+432 silly install resolved     _id: 'gaze@0.3.4',
+432 silly install resolved     dist:
+432 silly install resolved      { shasum: '5f94bdda0afe53bc710969bcd6f282548d60c279',
+432 silly install resolved        tarball: 'http://registry.npmjs.org/gaze/-/gaze-0.3.4.tgz' },
+432 silly install resolved     _from: 'gaze@>=0.3.2 <0.4.0',
+432 silly install resolved     _npmVersion: '1.2.18',
+432 silly install resolved     _npmUser: { name: 'shama', email: 'kyle@dontkry.com' },
+432 silly install resolved     maintainers: [ [Object] ],
+432 silly install resolved     directories: {},
+432 silly install resolved     _shasum: '5f94bdda0afe53bc710969bcd6f282548d60c279',
+432 silly install resolved     _resolved: 'https://registry.npmjs.org/gaze/-/gaze-0.3.4.tgz',
+432 silly install resolved     readme: 'ERROR: No README data found!' },
+432 silly install resolved   { name: 'walkdir',
+432 silly install resolved     description: 'Find files simply. Walks a directory tree emitting events based on what it finds. Presents a familiar callback/emitter/a+sync interface. Walk a tree of any depth.',
+432 silly install resolved     version: '0.0.11',
+432 silly install resolved     author: { name: 'Ryan Day', email: 'soldair@gmail.com' },
+432 silly install resolved     keywords: [ 'find', 'walk', 'tree', 'files', 'fs' ],
+432 silly install resolved     main: './walkdir.js',
+432 silly install resolved     homepage: 'http://github.com/soldair/node-walkdir',
+432 silly install resolved     repository:
+432 silly install resolved      { type: 'git',
+432 silly install resolved        url: 'git://github.com/soldair/node-walkdir.git' },
+432 silly install resolved     scripts: { test: 'tape test/*.js' },
+432 silly install resolved     devDependencies: { tape: '^4.0.0' },
+432 silly install resolved     engines: { node: '>=0.6.0' },
+432 silly install resolved     license: 'MIT',
+432 silly install resolved     contributors: [ [Object] ],
+432 silly install resolved     gitHead: '63bd65dc8fba903634f84f818dad3e7f39032927',
+432 silly install resolved     bugs: { url: 'https://github.com/soldair/node-walkdir/issues' },
+432 silly install resolved     _id: 'walkdir@0.0.11',
+432 silly install resolved     _shasum: 'a16d025eb931bd03b52f308caed0f40fcebe9532',
+432 silly install resolved     _from: 'walkdir@>=0.0.1',
+432 silly install resolved     _npmVersion: '3.3.12',
+432 silly install resolved     _nodeVersion: '4.2.1',
+432 silly install resolved     _npmUser: { name: 'soldair', email: 'soldair@gmail.com' },
+432 silly install resolved     dist:
+432 silly install resolved      { shasum: 'a16d025eb931bd03b52f308caed0f40fcebe9532',
+432 silly install resolved        tarball: 'http://registry.npmjs.org/walkdir/-/walkdir-0.0.11.tgz' },
+432 silly install resolved     maintainers: [ [Object] ],
+432 silly install resolved     directories: {},
+432 silly install resolved     _resolved: 'https://registry.npmjs.org/walkdir/-/walkdir-0.0.11.tgz',
+432 silly install resolved     readme: 'ERROR: No README data found!' },
+432 silly install resolved   { name: 'mkdirp',
+432 silly install resolved     description: 'Recursively mkdir, like `mkdir -p`',
+432 silly install resolved     version: '0.3.5',
+432 silly install resolved     author:
+432 silly install resolved      { name: 'James Halliday',
+432 silly install resolved        email: 'mail@substack.net',
+432 silly install resolved        url: 'http://substack.net' },
+432 silly install resolved     main: './index',
+432 silly install resolved     keywords: [ 'mkdir', 'directory' ],
+432 silly install resolved     repository:
+432 silly install resolved      { type: 'git',
+432 silly install resolved        url: 'git+ssh://git@github.com/substack/node-mkdirp.git' },
+432 silly install resolved     scripts: { test: 'tap test/*.js' },
+432 silly install resolved     devDependencies: { tap: '~0.4.0' },
+432 silly install resolved     license: 'MIT',
+432 silly install resolved     _id: 'mkdirp@0.3.5',
+432 silly install resolved     dist:
+432 silly install resolved      { shasum: 'de3e5f8961c88c787ee1368df849ac4413eca8d7',
+432 silly install resolved        tarball: 'http://registry.npmjs.org/mkdirp/-/mkdirp-0.3.5.tgz' },
+432 silly install resolved     _from: 'mkdirp@>=0.3.5 <0.4.0',
+432 silly install resolved     _npmVersion: '1.2.2',
+432 silly install resolved     _npmUser: { name: 'substack', email: 'mail@substack.net' },
+432 silly install resolved     maintainers: [ [Object] ],
+432 silly install resolved     directories: {},
+432 silly install resolved     _shasum: 'de3e5f8961c88c787ee1368df849ac4413eca8d7',
+432 silly install resolved     _resolved: 'https://registry.npmjs.org/mkdirp/-/mkdirp-0.3.5.tgz',
+432 silly install resolved     bugs: { url: 'https://github.com/substack/node-mkdirp/issues' },
+432 silly install resolved     readme: 'ERROR: No README data found!',
+432 silly install resolved     homepage: 'https://github.com/substack/node-mkdirp' },
+432 silly install resolved   { name: 'underscore',
+432 silly install resolved     description: 'JavaScript\'s functional programming helper library.',
+432 silly install resolved     homepage: 'http://underscorejs.org',
+432 silly install resolved     keywords: [ 'util', 'functional', 'server', 'client', 'browser' ],
+432 silly install resolved     author: { name: 'Jeremy Ashkenas', email: 'jeremy@documentcloud.org' },
+432 silly install resolved     repository:
+432 silly install resolved      { type: 'git',
+432 silly install resolved        url: 'git://github.com/jashkenas/underscore.git' },
+432 silly install resolved     main: 'underscore.js',
+432 silly install resolved     version: '1.8.3',
+432 silly install resolved     devDependencies:
+432 silly install resolved      { docco: '*',
+432 silly install resolved        eslint: '0.6.x',
+432 silly install resolved        karma: '~0.12.31',
+432 silly install resolved        'karma-qunit': '~0.1.4',
+432 silly install resolved        'qunit-cli': '~0.2.0',
+432 silly install resolved        'uglify-js': '2.4.x' },
+432 silly install resolved     scripts:
+432 silly install resolved      { test: 'npm run test-node && npm run lint',
+432 silly install resolved        lint: 'eslint underscore.js test/*.js',
+432 silly install resolved        'test-node': 'qunit-cli test/*.js',
+432 silly install resolved        'test-browser': 'npm i karma-phantomjs-launcher && ./node_modules/karma/bin/karma start',
+432 silly install resolved        build: 'uglifyjs underscore.js -c "evaluate=false" --comments "/    .*/" -m --source-map underscore-min.map -o underscore-min.js',
+432 silly install resolved        doc: 'docco underscore.js' },
+432 silly install resolved     license: 'MIT',
+432 silly install resolved     files:
+432 silly install resolved      [ 'underscore.js',
+432 silly install resolved        'underscore-min.js',
+432 silly install resolved        'underscore-min.map',
+432 silly install resolved        'LICENSE' ],
+432 silly install resolved     gitHead: 'e4743ab712b8ab42ad4ccb48b155034d02394e4d',
+432 silly install resolved     bugs: { url: 'https://github.com/jashkenas/underscore/issues' },
+432 silly install resolved     _id: 'underscore@1.8.3',
+432 silly install resolved     _shasum: '4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022',
+432 silly install resolved     _from: 'underscore@>=1.3.1',
+432 silly install resolved     _npmVersion: '1.4.28',
+432 silly install resolved     _npmUser: { name: 'jashkenas', email: 'jashkenas@gmail.com' },
+432 silly install resolved     maintainers: [ [Object] ],
+432 silly install resolved     dist:
+432 silly install resolved      { shasum: '4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022',
+432 silly install resolved        tarball: 'http://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz' },
+432 silly install resolved     directories: {},
+432 silly install resolved     _resolved: 'https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz',
+432 silly install resolved     readme: 'ERROR: No README data found!' },
+432 silly install resolved   { author: { name: 'Larry Myers' },
+432 silly install resolved     name: 'jasmine-reporters',
+432 silly install resolved     description: 'Reporters for the Jasmine BDD Framework',
+432 silly install resolved     version: '2.0.7',
+432 silly install resolved     homepage: 'https://github.com/larrymyers/jasmine-reporters',
+432 silly install resolved     maintainers: [ [Object] ],
+432 silly install resolved     repository:
+432 silly install resolved      { type: 'git',
+432 silly install resolved        url: 'git://github.com/larrymyers/jasmine-reporters.git' },
+432 silly install resolved     dependencies: { mkdirp: '~0.3.5' },
+432 silly install resolved     devDependencies: {},
+432 silly install resolved     licenses: [ [Object] ],
+432 silly install resolved     gitHead: '209456b1a239f844f02acc368affca6ea5389fc0',
+432 silly install resolved     bugs: { url: 'https://github.com/larrymyers/jasmine-reporters/issues' },
+432 silly install resolved     _id: 'jasmine-reporters@2.0.7',
+432 silly install resolved     scripts: {},
+432 silly install resolved     _shasum: '3395f90302dc21ecab2058b78297faf0744f4ef7',
+432 silly install resolved     _from: 'jasmine-reporters@>=0.2.0',
+432 silly install resolved     _npmVersion: '2.10.1',
+432 silly install resolved     _nodeVersion: '0.12.4',
+432 silly install resolved     _npmUser: { name: 'bloveridge', email: 'bloveridge@gmail.com' },
+432 silly install resolved     dist:
+432 silly install resolved      { shasum: '3395f90302dc21ecab2058b78297faf0744f4ef7',
+432 silly install resolved        tarball: 'http://registry.npmjs.org/jasmine-reporters/-/jasmine-reporters-2.0.7.tgz' },
+432 silly install resolved     directories: {},
+432 silly install resolved     _resolved: 'https://registry.npmjs.org/jasmine-reporters/-/jasmine-reporters-2.0.7.tgz',
+432 silly install resolved     readme: 'ERROR: No README data found!' },
+432 silly install resolved   { name: 'requirejs',
+432 silly install resolved     description: 'Node adapter for RequireJS, for loading AMD modules. Includes RequireJS optimizer',
+432 silly install resolved     version: '2.1.22',
+432 silly install resolved     homepage: 'http://github.com/jrburke/r.js',
+432 silly install resolved     author:
+432 silly install resolved      { name: 'James Burke',
+432 silly install resolved        email: 'jrburke@gmail.com',
+432 silly install resolved        url: 'http://github.com/jrburke' },
+432 silly install resolved     licenses: [ [Object], [Object] ],
+432 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/jrburke/r.js.git' },
+432 silly install resolved     main: './bin/r.js',
+432 silly install resolved     bin: { 'r.js': './bin/r.js' },
+432 silly install resolved     engines: { node: '>=0.4.0' },
+432 silly install resolved     bugs: { url: 'https://github.com/jrburke/r.js/issues' },
+432 silly install resolved     _id: 'requirejs@2.1.22',
+432 silly install resolved     scripts: {},
+432 silly install resolved     _shasum: 'dd78fd2d34180c0d62c724b5b8aebc0664e0366f',
+432 silly install resolved     _from: 'requirejs@>=0.27.1',
+432 silly install resolved     _npmVersion: '2.12.1',
+432 silly install resolved     _nodeVersion: '0.10.36',
+432 silly install resolved     _npmUser: { name: 'jrburke', email: 'jrburke@gmail.com' },
+432 silly install resolved     maintainers: [ [Object] ],
+432 silly install resolved     dist:
+432 silly install resolved      { shasum: 'dd78fd2d34180c0d62c724b5b8aebc0664e0366f',
+432 silly install resolved        tarball: 'http://registry.npmjs.org/requirejs/-/requirejs-2.1.22.tgz' },
+432 silly install resolved     directories: {},
+432 silly install resolved     _resolved: 'https://registry.npmjs.org/requirejs/-/requirejs-2.1.22.tgz',
+432 silly install resolved     readme: 'ERROR: No README data found!' } ]
+433 info install gaze@0.3.4 into /usr/local/lib/node_modules/heroku/node_modules/jasmine-node
+434 info install walkdir@0.0.11 into /usr/local/lib/node_modules/heroku/node_modules/jasmine-node
+435 info install mkdirp@0.3.5 into /usr/local/lib/node_modules/heroku/node_modules/jasmine-node
+436 info install underscore@1.8.3 into /usr/local/lib/node_modules/heroku/node_modules/jasmine-node
+437 info install jasmine-reporters@2.0.7 into /usr/local/lib/node_modules/heroku/node_modules/jasmine-node
+438 info install requirejs@2.1.22 into /usr/local/lib/node_modules/heroku/node_modules/jasmine-node
+439 info installOne gaze@0.3.4
+440 verbose installOne of gaze to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node not in flight; installing
+441 info installOne walkdir@0.0.11
+442 verbose installOne of walkdir to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node not in flight; installing
+443 info installOne mkdirp@0.3.5
+444 verbose installOne of mkdirp to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node not in flight; installing
+445 info installOne underscore@1.8.3
+446 verbose installOne of underscore to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node not in flight; installing
+447 info installOne jasmine-reporters@2.0.7
+448 verbose installOne of jasmine-reporters to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node not in flight; installing
+449 info installOne requirejs@2.1.22
+450 verbose installOne of requirejs to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node not in flight; installing
+451 verbose lock using /Users/chris/.npm/_locks/gaze-48b9af787e43e135.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze
+452 verbose lock using /Users/chris/.npm/_locks/walkdir-b6db96d4c659bd18.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/walkdir
+453 verbose lock using /Users/chris/.npm/_locks/underscore-e7df2eefc889121c.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/underscore
+454 silly install write writing gaze 0.3.4 to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze
+455 silly install write writing walkdir 0.0.11 to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/walkdir
+456 silly install write writing underscore 1.8.3 to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/underscore
+457 verbose lock using /Users/chris/.npm/_locks/mkdirp-e9db1045620a298b.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/mkdirp
+458 verbose lock using /Users/chris/.npm/_locks/jasmine-reporters-7a4da3ad53f6d9ff.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/jasmine-reporters
+459 verbose lock using /Users/chris/.npm/_locks/requirejs-d6eebed53617cca2.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/requirejs
+460 silly install write writing mkdirp 0.3.5 to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/mkdirp
+461 silly install write writing jasmine-reporters 2.0.7 to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/jasmine-reporters
+462 silly install write writing requirejs 2.1.22 to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/requirejs
+463 verbose unbuild lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze
+464 verbose unbuild lib/node_modules/heroku/node_modules/jasmine-node/node_modules/underscore
+465 verbose unbuild lib/node_modules/heroku/node_modules/jasmine-node/node_modules/walkdir
+466 verbose unbuild lib/node_modules/heroku/node_modules/jasmine-node/node_modules/mkdirp
+467 verbose unbuild lib/node_modules/heroku/node_modules/jasmine-node/node_modules/jasmine-reporters
+468 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze is being purged from base /usr/local
+469 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze
+470 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/underscore is being purged from base /usr/local
+471 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/underscore
+472 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/walkdir is being purged from base /usr/local
+473 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/walkdir
+474 verbose unbuild lib/node_modules/heroku/node_modules/jasmine-node/node_modules/requirejs
+475 verbose tar unpack /Users/chris/.npm/gaze/0.3.4/package.tgz
+476 verbose tar unpacking to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze
+477 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze is being purged
+478 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze
+479 verbose tar unpack /Users/chris/.npm/underscore/1.8.3/package.tgz
+480 verbose tar unpacking to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/underscore
+481 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/underscore is being purged
+482 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/underscore
+483 verbose tar unpack /Users/chris/.npm/walkdir/0.0.11/package.tgz
+484 verbose tar unpacking to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/walkdir
+485 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/walkdir is being purged
+486 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/walkdir
+487 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/mkdirp is being purged from base /usr/local
+488 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/mkdirp
+489 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/jasmine-reporters is being purged from base /usr/local
+490 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/jasmine-reporters
+491 silly gunzTarPerm modes [ '755', '644' ]
+492 silly gunzTarPerm modes [ '755', '644' ]
+493 silly gunzTarPerm modes [ '755', '644' ]
+494 verbose tar unpack /Users/chris/.npm/mkdirp/0.3.5/package.tgz
+495 verbose tar unpacking to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/mkdirp
+496 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/mkdirp is being purged
+497 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/mkdirp
+498 verbose tar unpack /Users/chris/.npm/jasmine-reporters/2.0.7/package.tgz
+499 verbose tar unpacking to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/jasmine-reporters
+500 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/jasmine-reporters is being purged
+501 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/jasmine-reporters
+502 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/requirejs is being purged from base /usr/local
+503 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/requirejs
+504 silly gunzTarPerm modes [ '755', '644' ]
+505 silly gunzTarPerm modes [ '755', '644' ]
+506 verbose tar unpack /Users/chris/.npm/requirejs/2.1.22/package.tgz
+507 verbose tar unpacking to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/requirejs
+508 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/requirejs is being purged
+509 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/requirejs
+510 silly gunzTarPerm modes [ '755', '644' ]
+511 silly gunzTarPerm extractEntry package.json
+512 silly gunzTarPerm extractEntry package.json
+513 silly gunzTarPerm extractEntry package.json
+514 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+515 silly gunzTarPerm extractEntry package.json
+516 silly gunzTarPerm extractEntry package.json
+517 silly gunzTarPerm extractEntry package.json
+518 silly gunzTarPerm extractEntry .npmignore
+519 silly gunzTarPerm extractEntry README.md
+520 silly gunzTarPerm extractEntry README.md
+521 silly gunzTarPerm extractEntry LICENSE
+522 silly gunzTarPerm extractEntry .npmignore
+523 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+524 silly gunzTarPerm extractEntry walkdir.js
+525 silly gunzTarPerm modified mode [ 'walkdir.js', 436, 420 ]
+526 silly gunzTarPerm extractEntry .npmignore
+527 silly gunzTarPerm extractEntry LICENSE
+528 silly gunzTarPerm extractEntry .npmignore
+529 silly gunzTarPerm extractEntry LICENSE
+530 silly gunzTarPerm extractEntry README.md
+531 silly gunzTarPerm extractEntry require.js
+532 silly gunzTarPerm extractEntry Gruntfile.js
+533 silly gunzTarPerm extractEntry LICENSE-MIT
+534 silly gunzTarPerm extractEntry .travis.yml
+535 silly gunzTarPerm modified mode [ '.travis.yml', 436, 420 ]
+536 silly gunzTarPerm extractEntry CONTRIBUTING.md
+537 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 436, 420 ]
+538 silly gunzTarPerm extractEntry underscore.js
+539 silly gunzTarPerm extractEntry underscore-min.js
+540 silly gunzTarPerm extractEntry underscore-min.map
+541 silly gunzTarPerm extractEntry index.js
+542 silly gunzTarPerm extractEntry examples/pow.js
+543 silly gunzTarPerm extractEntry index.js
+544 silly gunzTarPerm extractEntry README.markdown
+545 silly gunzTarPerm extractEntry bin/r.js
+546 silly gunzTarPerm extractEntry .editorconfig
+547 silly gunzTarPerm extractEntry .jshintrc
+548 silly gunzTarPerm extractEntry test/async.js
+549 silly gunzTarPerm modified mode [ 'test/async.js', 436, 420 ]
+550 silly gunzTarPerm extractEntry test/symlink.js
+551 silly gunzTarPerm modified mode [ 'test/symlink.js', 436, 420 ]
+552 silly gunzTarPerm extractEntry readme.markdown
+553 silly gunzTarPerm extractEntry test/perm.js
+554 silly gunzTarPerm extractEntry lib/jasmine-2.0.0/boot.js
+555 silly gunzTarPerm extractEntry lib/jasmine-2.0.0/console.js
+556 silly gunzTarPerm extractEntry lib/jasmine-2.0.0/jasmine-html.js
+557 silly gunzTarPerm extractEntry lib/jasmine-2.0.0/jasmine.js
+558 silly gunzTarPerm extractEntry lib/jasmine-2.0.0/jasmine.css
+559 silly gunzTarPerm extractEntry lib/jasmine-2.0.0/jasmine_favicon.png
+560 silly gunzTarPerm extractEntry src/junit_reporter.js
+561 silly gunzTarPerm extractEntry src/nunit_reporter.js
+562 silly gunzTarPerm extractEntry src/tap_reporter.js
+563 silly gunzTarPerm extractEntry src/teamcity_reporter.js
+564 silly gunzTarPerm extractEntry src/terminal_reporter.js
+565 silly gunzTarPerm extractEntry src/junit_reporter.js.orig
+566 silly gunzTarPerm extractEntry bin/phantomjs-testrunner.js
+567 silly gunzTarPerm extractEntry bin/phantomjs.runner.sh
+568 silly gunzTarPerm extractEntry publish.sh
+569 silly gunzTarPerm extractEntry release.sh
+570 silly gunzTarPerm extractEntry test/JUnitXmlReporterSpec.js
+571 silly gunzTarPerm extractEntry test/NUnitXmlReporterSpec.js
+572 silly gunzTarPerm extractEntry test/junit_xml_reporter.html
+573 silly gunzTarPerm extractEntry test/nunit_xml_reporter.html
+574 silly gunzTarPerm extractEntry test/tap_reporter.html
+575 silly gunzTarPerm extractEntry test/teamcity_reporter.html
+576 silly gunzTarPerm extractEntry test/terminal_reporter.html
+577 silly gunzTarPerm extractEntry test/endearly.js
+578 silly gunzTarPerm modified mode [ 'test/endearly.js', 436, 420 ]
+579 silly gunzTarPerm extractEntry .travis.yml
+580 silly gunzTarPerm extractEntry benchmarks/gaze100s.js
+581 silly gunzTarPerm extractEntry test/perm_sync.js
+582 silly gunzTarPerm extractEntry test/race.js
+583 silly gunzTarPerm extractEntry test/ignore-during.js
+584 silly gunzTarPerm modified mode [ 'test/ignore-during.js', 436, 420 ]
+585 silly gunzTarPerm extractEntry test/custom_fs.js
+586 silly gunzTarPerm modified mode [ 'test/custom_fs.js', 436, 420 ]
+587 silly gunzTarPerm extractEntry lib/gaze.js
+588 silly gunzTarPerm extractEntry test/rel.js
+589 silly gunzTarPerm extractEntry test/pauseresume.js
+590 silly gunzTarPerm modified mode [ 'test/pauseresume.js', 436, 420 ]
+591 silly gunzTarPerm extractEntry test/max_depth.js
+592 silly gunzTarPerm modified mode [ 'test/max_depth.js', 436, 420 ]
+593 silly gunzTarPerm extractEntry AUTHORS
+594 silly gunzTarPerm extractEntry test/add_test.js
+595 silly gunzTarPerm extractEntry test/return.js
+596 silly gunzTarPerm extractEntry test/clobber.js
+597 silly gunzTarPerm extractEntry test/nested-symlink.js
+598 silly gunzTarPerm modified mode [ 'test/nested-symlink.js', 436, 420 ]
+599 silly gunzTarPerm extractEntry test/no_recurse.js
+600 silly gunzTarPerm modified mode [ 'test/no_recurse.js', 436, 420 ]
+601 silly gunzTarPerm extractEntry test/api_test.js
+602 silly gunzTarPerm extractEntry test/matching_test.js
+603 silly gunzTarPerm extractEntry test/root.js
+604 silly gunzTarPerm extractEntry test/umask.js
+605 silly gunzTarPerm extractEntry test/patterns_test.js
+606 silly gunzTarPerm extractEntry test/relative_test.js
+607 silly gunzTarPerm extractEntry test/nofailemptydir.js
+608 silly gunzTarPerm modified mode [ 'test/nofailemptydir.js', 436, 420 ]
+609 silly gunzTarPerm extractEntry test/ignore-first.js
+610 silly gunzTarPerm modified mode [ 'test/ignore-first.js', 436, 420 ]
+611 silly gunzTarPerm extractEntry test/sync.js
+612 silly gunzTarPerm extractEntry test/chmod.js
+613 silly gunzTarPerm extractEntry test/rename_test.js
+614 silly gunzTarPerm extractEntry test/safewrite_test.js
+615 verbose write writing to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/underscore/package.json
+616 silly gunzTarPerm extractEntry test/sync.js
+617 silly gunzTarPerm modified mode [ 'test/sync.js', 436, 420 ]
+618 silly gunzTarPerm extractEntry test/ignore.js
+619 silly gunzTarPerm modified mode [ 'test/ignore.js', 436, 420 ]
+620 silly gunzTarPerm extractEntry test/umask_sync.js
+621 silly gunzTarPerm extractEntry test/return_sync.js
+622 info preinstall underscore@1.8.3
+623 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/underscore/package.json
+624 silly gunzTarPerm extractEntry test/watch_test.js
+625 silly gunzTarPerm extractEntry test/fixtures/one.js
+626 silly gunzTarPerm extractEntry test/comparison/package.json
+627 silly gunzTarPerm modified mode [ 'test/comparison/package.json', 436, 420 ]
+628 silly gunzTarPerm extractEntry test/comparison/find.js
+629 silly gunzTarPerm modified mode [ 'test/comparison/find.js', 436, 420 ]
+630 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/underscore/package.json
+631 silly gunzTarPerm extractEntry test/mkdirp.js
+632 silly gunzTarPerm extractEntry .travis.yml
+633 silly gunzTarPerm extractEntry test/comparison/finditsynctest.js
+634 silly gunzTarPerm modified mode [ 'test/comparison/finditsynctest.js', 436, 420 ]
+635 silly gunzTarPerm extractEntry test/comparison/findittest.js
+636 silly gunzTarPerm modified mode [ 'test/comparison/findittest.js', 436, 420 ]
+637 silly install resolved []
+638 verbose about to build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/underscore
+639 info build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/underscore
+640 silly gunzTarPerm extractEntry test/fixtures/Project (LO)/one.js
+641 silly gunzTarPerm extractEntry test/fixtures/nested/one.js
+642 info linkStuff underscore@1.8.3
+643 silly linkStuff underscore@1.8.3 has /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules as its parent node_modules
+644 silly linkStuff underscore@1.8.3 is part of a global install
+645 silly linkStuff underscore@1.8.3 is installed into a global node_modules
+646 silly gunzTarPerm extractEntry test/comparison/fstream.js
+647 silly gunzTarPerm modified mode [ 'test/comparison/fstream.js', 436, 420 ]
+648 silly gunzTarPerm extractEntry test/comparison/lsr.js
+649 silly gunzTarPerm modified mode [ 'test/comparison/lsr.js', 436, 420 ]
+650 silly gunzTarPerm extractEntry test/fixtures/nested/three.js
+651 silly gunzTarPerm extractEntry test/fixtures/nested/sub/two.js
+652 verbose linkBins underscore@1.8.3
+653 verbose linkMans underscore@1.8.3
+654 verbose rebuildBundles underscore@1.8.3
+655 info install underscore@1.8.3
+656 info postinstall underscore@1.8.3
+657 verbose unlock done using /Users/chris/.npm/_locks/underscore-e7df2eefc889121c.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/underscore
+658 silly gunzTarPerm extractEntry test/comparison/find.py
+659 silly gunzTarPerm modified mode [ 'test/comparison/find.py', 436, 420 ]
+660 silly gunzTarPerm extractEntry test/comparison/install_test_deps.sh
+661 silly gunzTarPerm modified mode [ 'test/comparison/install_test_deps.sh', 509, 493 ]
+662 silly gunzTarPerm extractEntry test/fixtures/nested/sub2/two.js
+663 silly gunzTarPerm extractEntry test/fixtures/sub/one.js
+664 silly gunzTarPerm extractEntry test/dir/foo/a/b/c/w
+665 silly gunzTarPerm modified mode [ 'test/dir/foo/a/b/c/w', 436, 420 ]
+666 silly gunzTarPerm extractEntry test/dir/foo/a/b/z
+667 silly gunzTarPerm modified mode [ 'test/dir/foo/a/b/z', 436, 420 ]
+668 silly gunzTarPerm extractEntry test/fixtures/sub/two.js
+669 silly gunzTarPerm extractEntry test/dir/foo/a/y
+670 silly gunzTarPerm modified mode [ 'test/dir/foo/a/y', 436, 420 ]
+671 silly gunzTarPerm extractEntry test/dir/foo/x
+672 silly gunzTarPerm modified mode [ 'test/dir/foo/x', 436, 420 ]
+673 silly gunzTarPerm extractEntry test/dir/nested-symlink/found-me
+674 silly gunzTarPerm modified mode [ 'test/dir/nested-symlink/found-me', 436, 420 ]
+675 silly gunzTarPerm extractEntry test/dir/symlinks/dir1/file1
+676 silly gunzTarPerm modified mode [ 'test/dir/symlinks/dir1/file1', 436, 420 ]
+677 silly gunzTarPerm extractEntry test/dir/symlinks/dir2/file2
+678 silly gunzTarPerm modified mode [ 'test/dir/symlinks/dir2/file2', 436, 420 ]
+679 silly gunzTarPerm extractEntry test/dir/symlinks/file
+680 silly gunzTarPerm modified mode [ 'test/dir/symlinks/file', 436, 420 ]
+681 silly gunzTarPerm extractEntry .jshintignore
+682 silly gunzTarPerm modified mode [ '.jshintignore', 436, 420 ]
+683 silly gunzTarPerm extractEntry readme.md
+684 silly gunzTarPerm modified mode [ 'readme.md', 436, 420 ]
+685 silly gunzTarPerm extractEntry license
+686 silly gunzTarPerm modified mode [ 'license', 436, 420 ]
+687 verbose write writing to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/mkdirp/package.json
+688 info preinstall mkdirp@0.3.5
+689 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/mkdirp/package.json
+690 verbose write writing to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/requirejs/package.json
+691 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/mkdirp/package.json
+692 info preinstall requirejs@2.1.22
+693 silly install resolved []
+694 verbose about to build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/mkdirp
+695 info build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/mkdirp
+696 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/requirejs/package.json
+697 info linkStuff mkdirp@0.3.5
+698 silly linkStuff mkdirp@0.3.5 has /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules as its parent node_modules
+699 silly linkStuff mkdirp@0.3.5 is part of a global install
+700 silly linkStuff mkdirp@0.3.5 is installed into a global node_modules
+701 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/requirejs/package.json
+702 verbose linkBins mkdirp@0.3.5
+703 verbose linkMans mkdirp@0.3.5
+704 verbose rebuildBundles mkdirp@0.3.5
+705 info install mkdirp@0.3.5
+706 info postinstall mkdirp@0.3.5
+707 silly install resolved []
+708 verbose about to build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/requirejs
+709 info build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/requirejs
+710 verbose unlock done using /Users/chris/.npm/_locks/mkdirp-e9db1045620a298b.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/mkdirp
+711 info linkStuff requirejs@2.1.22
+712 silly linkStuff requirejs@2.1.22 has /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules as its parent node_modules
+713 silly linkStuff requirejs@2.1.22 is part of a global install
+714 silly linkStuff requirejs@2.1.22 is installed into a global node_modules
+715 verbose linkBins requirejs@2.1.22
+716 verbose link bins [ { 'r.js': './bin/r.js' },
+716 verbose link bins   '/usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/.bin',
+716 verbose link bins   false ]
+717 verbose linkMans requirejs@2.1.22
+718 verbose rebuildBundles requirejs@2.1.22
+719 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/.bin/r.js is being purged
+720 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/.bin/r.js
+721 info install requirejs@2.1.22
+722 info postinstall requirejs@2.1.22
+723 verbose unlock done using /Users/chris/.npm/_locks/requirejs-d6eebed53617cca2.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/requirejs
+724 verbose write writing to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/package.json
+725 info preinstall gaze@0.3.4
+726 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/package.json
+727 silly prepareForInstallMany adding minimatch@~0.2.9 from gaze dependencies
+728 silly prepareForInstallMany adding fileset@~0.1.5 from gaze dependencies
+729 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/package.json
+730 silly cache add args [ 'minimatch@~0.2.9', null ]
+731 verbose cache add spec minimatch@~0.2.9
+732 silly cache add args [ 'fileset@~0.1.5', null ]
+733 verbose cache add spec fileset@~0.1.5
+734 silly cache add parsed spec Result {
+734 silly cache add   raw: 'minimatch@~0.2.9',
+734 silly cache add   scope: null,
+734 silly cache add   name: 'minimatch',
+734 silly cache add   rawSpec: '~0.2.9',
+734 silly cache add   spec: '>=0.2.9 <0.3.0',
+734 silly cache add   type: 'range' }
+735 silly addNamed minimatch@>=0.2.9 <0.3.0
+736 verbose addNamed ">=0.2.9 <0.3.0" is a valid semver range for minimatch
+737 silly addNameRange { name: 'minimatch', range: '>=0.2.9 <0.3.0', hasData: false }
+738 silly mapToRegistry name minimatch
+739 silly mapToRegistry using default registry
+740 silly mapToRegistry registry https://registry.npmjs.org/
+741 silly mapToRegistry uri https://registry.npmjs.org/minimatch
+742 verbose addNameRange registry:https://registry.npmjs.org/minimatch not in flight; fetching
+743 silly cache add parsed spec Result {
+743 silly cache add   raw: 'fileset@~0.1.5',
+743 silly cache add   scope: null,
+743 silly cache add   name: 'fileset',
+743 silly cache add   rawSpec: '~0.1.5',
+743 silly cache add   spec: '>=0.1.5 <0.2.0',
+743 silly cache add   type: 'range' }
+744 silly addNamed fileset@>=0.1.5 <0.2.0
+745 verbose addNamed ">=0.1.5 <0.2.0" is a valid semver range for fileset
+746 silly addNameRange { name: 'fileset', range: '>=0.1.5 <0.2.0', hasData: false }
+747 silly mapToRegistry name fileset
+748 silly mapToRegistry using default registry
+749 silly mapToRegistry registry https://registry.npmjs.org/
+750 silly mapToRegistry uri https://registry.npmjs.org/fileset
+751 verbose addNameRange registry:https://registry.npmjs.org/fileset not in flight; fetching
+752 verbose write writing to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/jasmine-reporters/package.json
+753 verbose request uri https://registry.npmjs.org/minimatch
+754 verbose request no auth needed
+755 info attempt registry request try #1 at 4:30:21 PM
+756 verbose etag "88JGF09JGHX2ZDOYARXHFCDT7"
+757 http request GET https://registry.npmjs.org/minimatch
+758 verbose request uri https://registry.npmjs.org/fileset
+759 verbose request no auth needed
+760 info attempt registry request try #1 at 4:30:21 PM
+761 verbose etag "26TXLYXMYOOWKMC7521B3WUG6"
+762 http request GET https://registry.npmjs.org/fileset
+763 info preinstall jasmine-reporters@2.0.7
+764 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/jasmine-reporters/package.json
+765 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/jasmine-reporters/package.json
+766 silly install resolved []
+767 verbose about to build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/jasmine-reporters
+768 info build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/jasmine-reporters
+769 info linkStuff jasmine-reporters@2.0.7
+770 silly linkStuff jasmine-reporters@2.0.7 has /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules as its parent node_modules
+771 silly linkStuff jasmine-reporters@2.0.7 is part of a global install
+772 silly linkStuff jasmine-reporters@2.0.7 is installed into a global node_modules
+773 verbose linkBins jasmine-reporters@2.0.7
+774 verbose linkMans jasmine-reporters@2.0.7
+775 verbose rebuildBundles jasmine-reporters@2.0.7
+776 info install jasmine-reporters@2.0.7
+777 info postinstall jasmine-reporters@2.0.7
+778 verbose unlock done using /Users/chris/.npm/_locks/jasmine-reporters-7a4da3ad53f6d9ff.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/jasmine-reporters
+779 verbose write writing to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/walkdir/package.json
+780 info preinstall walkdir@0.0.11
+781 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/walkdir/package.json
+782 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/walkdir/package.json
+783 silly install resolved []
+784 verbose about to build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/walkdir
+785 info build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/walkdir
+786 info linkStuff walkdir@0.0.11
+787 silly linkStuff walkdir@0.0.11 has /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules as its parent node_modules
+788 silly linkStuff walkdir@0.0.11 is part of a global install
+789 silly linkStuff walkdir@0.0.11 is installed into a global node_modules
+790 verbose linkBins walkdir@0.0.11
+791 verbose linkMans walkdir@0.0.11
+792 verbose rebuildBundles walkdir@0.0.11
+793 info install walkdir@0.0.11
+794 info postinstall walkdir@0.0.11
+795 verbose unlock done using /Users/chris/.npm/_locks/walkdir-b6db96d4c659bd18.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/walkdir
+796 http 304 https://registry.npmjs.org/minimatch
+797 verbose headers { date: 'Sun, 29 Nov 2015 23:30:21 GMT',
+797 verbose headers   via: '1.1 varnish',
+797 verbose headers   'cache-control': 'max-age=60',
+797 verbose headers   etag: '"88JGF09JGHX2ZDOYARXHFCDT7"',
+797 verbose headers   age: '47',
+797 verbose headers   connection: 'keep-alive',
+797 verbose headers   'x-served-by': 'cache-sjc3129-SJC',
+797 verbose headers   'x-cache': 'HIT',
+797 verbose headers   'x-cache-hits': '2',
+797 verbose headers   'x-timer': 'S1448839821.594426,VS0,VE0',
+797 verbose headers   vary: 'Accept' }
+798 silly get cb [ 304,
+798 silly get   { date: 'Sun, 29 Nov 2015 23:30:21 GMT',
+798 silly get     via: '1.1 varnish',
+798 silly get     'cache-control': 'max-age=60',
+798 silly get     etag: '"88JGF09JGHX2ZDOYARXHFCDT7"',
+798 silly get     age: '47',
+798 silly get     connection: 'keep-alive',
+798 silly get     'x-served-by': 'cache-sjc3129-SJC',
+798 silly get     'x-cache': 'HIT',
+798 silly get     'x-cache-hits': '2',
+798 silly get     'x-timer': 'S1448839821.594426,VS0,VE0',
+798 silly get     vary: 'Accept' } ]
+799 verbose etag https://registry.npmjs.org/minimatch from cache
+800 verbose get saving minimatch to /Users/chris/.npm/registry.npmjs.org/minimatch/.cache.json
+801 silly addNameRange number 2 { name: 'minimatch', range: '>=0.2.9 <0.3.0', hasData: true }
+802 silly addNameRange versions [ 'minimatch',
+802 silly addNameRange   [ '0.0.1',
+802 silly addNameRange     '0.0.2',
+802 silly addNameRange     '0.0.4',
+802 silly addNameRange     '0.0.5',
+802 silly addNameRange     '0.1.1',
+802 silly addNameRange     '0.1.2',
+802 silly addNameRange     '0.1.3',
+802 silly addNameRange     '0.1.4',
+802 silly addNameRange     '0.1.5',
+802 silly addNameRange     '0.2.0',
+802 silly addNameRange     '0.2.2',
+802 silly addNameRange     '0.2.3',
+802 silly addNameRange     '0.2.4',
+802 silly addNameRange     '0.2.5',
+802 silly addNameRange     '0.2.6',
+802 silly addNameRange     '0.2.7',
+802 silly addNameRange     '0.2.8',
+802 silly addNameRange     '0.2.9',
+802 silly addNameRange     '0.2.10',
+802 silly addNameRange     '0.2.11',
+802 silly addNameRange     '0.2.12',
+802 silly addNameRange     '0.2.13',
+802 silly addNameRange     '0.2.14',
+802 silly addNameRange     '0.3.0',
+802 silly addNameRange     '0.4.0',
+802 silly addNameRange     '1.0.0',
+802 silly addNameRange     '2.0.0',
+802 silly addNameRange     '2.0.1',
+802 silly addNameRange     '2.0.2',
+802 silly addNameRange     '2.0.3',
+802 silly addNameRange     '2.0.4',
+802 silly addNameRange     '2.0.5',
+802 silly addNameRange     '2.0.6',
+802 silly addNameRange     '2.0.7',
+802 silly addNameRange     '2.0.8',
+802 silly addNameRange     '2.0.9',
+802 silly addNameRange     '2.0.10',
+802 silly addNameRange     '3.0.0' ] ]
+803 silly addNamed minimatch@0.2.14
+804 verbose addNamed "0.2.14" is a plain semver version for minimatch
+805 silly cache afterAdd minimatch@0.2.14
+806 verbose afterAdd /Users/chris/.npm/minimatch/0.2.14/package/package.json not in flight; writing
+807 verbose afterAdd /Users/chris/.npm/minimatch/0.2.14/package/package.json written
+808 http 304 https://registry.npmjs.org/fileset
+809 verbose headers { date: 'Sun, 29 Nov 2015 23:30:21 GMT',
+809 verbose headers   via: '1.1 varnish',
+809 verbose headers   'cache-control': 'max-age=60',
+809 verbose headers   etag: '"26TXLYXMYOOWKMC7521B3WUG6"',
+809 verbose headers   age: '57',
+809 verbose headers   connection: 'keep-alive',
+809 verbose headers   'x-served-by': 'cache-sjc3129-SJC',
+809 verbose headers   'x-cache': 'HIT',
+809 verbose headers   'x-cache-hits': '1',
+809 verbose headers   'x-timer': 'S1448839821.614389,VS0,VE1',
+809 verbose headers   vary: 'Accept' }
+810 silly get cb [ 304,
+810 silly get   { date: 'Sun, 29 Nov 2015 23:30:21 GMT',
+810 silly get     via: '1.1 varnish',
+810 silly get     'cache-control': 'max-age=60',
+810 silly get     etag: '"26TXLYXMYOOWKMC7521B3WUG6"',
+810 silly get     age: '57',
+810 silly get     connection: 'keep-alive',
+810 silly get     'x-served-by': 'cache-sjc3129-SJC',
+810 silly get     'x-cache': 'HIT',
+810 silly get     'x-cache-hits': '1',
+810 silly get     'x-timer': 'S1448839821.614389,VS0,VE1',
+810 silly get     vary: 'Accept' } ]
+811 verbose etag https://registry.npmjs.org/fileset from cache
+812 verbose get saving fileset to /Users/chris/.npm/registry.npmjs.org/fileset/.cache.json
+813 silly addNameRange number 2 { name: 'fileset', range: '>=0.1.5 <0.2.0', hasData: true }
+814 silly addNameRange versions [ 'fileset',
+814 silly addNameRange   [ '0.0.1',
+814 silly addNameRange     '0.1.0',
+814 silly addNameRange     '0.1.1',
+814 silly addNameRange     '0.1.2',
+814 silly addNameRange     '0.1.3',
+814 silly addNameRange     '0.1.4',
+814 silly addNameRange     '0.1.5',
+814 silly addNameRange     '0.1.6',
+814 silly addNameRange     '0.1.7',
+814 silly addNameRange     '0.1.8',
+814 silly addNameRange     '0.2.1' ] ]
+815 silly addNamed fileset@0.1.8
+816 verbose addNamed "0.1.8" is a plain semver version for fileset
+817 silly cache afterAdd fileset@0.1.8
+818 verbose afterAdd /Users/chris/.npm/fileset/0.1.8/package/package.json not in flight; writing
+819 verbose afterAdd /Users/chris/.npm/fileset/0.1.8/package/package.json written
+820 silly install resolved [ { author:
+820 silly install resolved      { name: 'Isaac Z. Schlueter',
+820 silly install resolved        email: 'i@izs.me',
+820 silly install resolved        url: 'http://blog.izs.me' },
+820 silly install resolved     name: 'minimatch',
+820 silly install resolved     description: 'a glob matcher in javascript',
+820 silly install resolved     version: '0.2.14',
+820 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/minimatch.git' },
+820 silly install resolved     main: 'minimatch.js',
+820 silly install resolved     scripts: { test: 'tap test/*.js' },
+820 silly install resolved     engines: { node: '*' },
+820 silly install resolved     dependencies: { 'lru-cache': '2', sigmund: '~1.0.0' },
+820 silly install resolved     devDependencies: { tap: '' },
+820 silly install resolved     license:
+820 silly install resolved      { type: 'MIT',
+820 silly install resolved        url: 'http://github.com/isaacs/minimatch/raw/master/LICENSE' },
+820 silly install resolved     bugs: { url: 'https://github.com/isaacs/minimatch/issues' },
+820 silly install resolved     homepage: 'https://github.com/isaacs/minimatch',
+820 silly install resolved     _id: 'minimatch@0.2.14',
+820 silly install resolved     dist:
+820 silly install resolved      { shasum: 'c74e780574f63c6f9a090e90efbe6ef53a6a756a',
+820 silly install resolved        tarball: 'http://registry.npmjs.org/minimatch/-/minimatch-0.2.14.tgz' },
+820 silly install resolved     _from: 'minimatch@>=0.2.9 <0.3.0',
+820 silly install resolved     _npmVersion: '1.3.17',
+820 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+820 silly install resolved     maintainers: [ [Object] ],
+820 silly install resolved     directories: {},
+820 silly install resolved     _shasum: 'c74e780574f63c6f9a090e90efbe6ef53a6a756a',
+820 silly install resolved     _resolved: 'https://registry.npmjs.org/minimatch/-/minimatch-0.2.14.tgz',
+820 silly install resolved     readme: 'ERROR: No README data found!' },
+820 silly install resolved   { author: { name: 'mklabs' },
+820 silly install resolved     name: 'fileset',
+820 silly install resolved     description: 'Wrapper around miniglob / minimatch combo to allow multiple patterns matching and include-exclude ability',
+820 silly install resolved     version: '0.1.8',
+820 silly install resolved     homepage: 'https://github.com/mklabs/node-fileset',
+820 silly install resolved     repository: { type: 'git', url: 'git://github.com/mklabs/node-fileset.git' },
+820 silly install resolved     main: './lib/fileset',
+820 silly install resolved     scripts: { test: 'node tests/test.js' },
+820 silly install resolved     dependencies: { minimatch: '0.x', glob: '3.x' },
+820 silly install resolved     licenses: [ [Object] ],
+820 silly install resolved     gitHead: '1f78d5ecba35aef294ea726511c1daa5b07a6b5d',
+820 silly install resolved     bugs: { url: 'https://github.com/mklabs/node-fileset/issues' },
+820 silly install resolved     _id: 'fileset@0.1.8',
+820 silly install resolved     _shasum: '506b91a9396eaa7e32fb42a84077c7a0c736b741',
+820 silly install resolved     _from: 'fileset@>=0.1.5 <0.2.0',
+820 silly install resolved     _npmVersion: '2.10.1',
+820 silly install resolved     _nodeVersion: '0.12.4',
+820 silly install resolved     _npmUser: { name: 'mklabs', email: 'daniel.mickael@gmail.com' },
+820 silly install resolved     dist:
+820 silly install resolved      { shasum: '506b91a9396eaa7e32fb42a84077c7a0c736b741',
+820 silly install resolved        tarball: 'http://registry.npmjs.org/fileset/-/fileset-0.1.8.tgz' },
+820 silly install resolved     maintainers: [ [Object] ],
+820 silly install resolved     directories: {},
+820 silly install resolved     _resolved: 'https://registry.npmjs.org/fileset/-/fileset-0.1.8.tgz',
+820 silly install resolved     readme: 'ERROR: No README data found!' } ]
+821 info install minimatch@0.2.14 into /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze
+822 info install fileset@0.1.8 into /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze
+823 info installOne minimatch@0.2.14
+824 verbose installOne of minimatch to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze not in flight; installing
+825 info installOne fileset@0.1.8
+826 verbose installOne of fileset to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze not in flight; installing
+827 verbose lock using /Users/chris/.npm/_locks/minimatch-61e029b835252def.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch
+828 silly install write writing minimatch 0.2.14 to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch
+829 verbose lock using /Users/chris/.npm/_locks/fileset-b3ebb0d16c37a9ea.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset
+830 silly install write writing fileset 0.1.8 to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset
+831 verbose unbuild lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch
+832 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch is being purged from base /usr/local
+833 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch
+834 verbose unbuild lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset
+835 verbose tar unpack /Users/chris/.npm/minimatch/0.2.14/package.tgz
+836 verbose tar unpacking to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch
+837 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch is being purged
+838 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch
+839 silly gunzTarPerm modes [ '755', '644' ]
+840 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset is being purged from base /usr/local
+841 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset
+842 verbose tar unpack /Users/chris/.npm/fileset/0.1.8/package.tgz
+843 verbose tar unpacking to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset
+844 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset is being purged
+845 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset
+846 silly gunzTarPerm modes [ '755', '644' ]
+847 silly gunzTarPerm extractEntry package.json
+848 silly gunzTarPerm extractEntry package.json
+849 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+850 silly gunzTarPerm extractEntry .npmignore
+851 silly gunzTarPerm extractEntry README.md
+852 silly gunzTarPerm extractEntry .npmignore
+853 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+854 silly gunzTarPerm extractEntry README.md
+855 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+856 silly gunzTarPerm extractEntry LICENSE
+857 silly gunzTarPerm extractEntry minimatch.js
+858 silly gunzTarPerm extractEntry .travis.yml
+859 silly gunzTarPerm modified mode [ '.travis.yml', 438, 420 ]
+860 silly gunzTarPerm extractEntry LICENSE-MIT
+861 silly gunzTarPerm modified mode [ 'LICENSE-MIT', 438, 420 ]
+862 silly gunzTarPerm extractEntry test/basic.js
+863 silly gunzTarPerm extractEntry lib/fileset.js
+864 silly gunzTarPerm modified mode [ 'lib/fileset.js', 438, 420 ]
+865 silly gunzTarPerm extractEntry tests/helper.js
+866 silly gunzTarPerm modified mode [ 'tests/helper.js', 438, 420 ]
+867 silly gunzTarPerm extractEntry test/brace-expand.js
+868 silly gunzTarPerm extractEntry test/caching.js
+869 silly gunzTarPerm extractEntry tests/test.js
+870 silly gunzTarPerm modified mode [ 'tests/test.js', 438, 420 ]
+871 silly gunzTarPerm extractEntry tests/fixtures/an (odd) filename.js
+872 silly gunzTarPerm modified mode [ 'tests/fixtures/an (odd) filename.js', 438, 420 ]
+873 silly gunzTarPerm extractEntry test/defaults.js
+874 silly gunzTarPerm extractEntry test/extglob-ending-with-state-char.js
+875 verbose write writing to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/package.json
+876 verbose write writing to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/package.json
+877 info preinstall fileset@0.1.8
+878 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/package.json
+879 info preinstall minimatch@0.2.14
+880 silly prepareForInstallMany adding glob@3.x from fileset dependencies
+881 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/package.json
+882 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/package.json
+883 silly cache add args [ 'glob@3.x', null ]
+884 verbose cache add spec glob@3.x
+885 silly cache add parsed spec Result {
+885 silly cache add   raw: 'glob@3.x',
+885 silly cache add   scope: null,
+885 silly cache add   name: 'glob',
+885 silly cache add   rawSpec: '3.x',
+885 silly cache add   spec: '>=3.0.0 <4.0.0',
+885 silly cache add   type: 'range' }
+886 silly addNamed glob@>=3.0.0 <4.0.0
+887 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for glob
+888 silly addNameRange { name: 'glob', range: '>=3.0.0 <4.0.0', hasData: false }
+889 silly mapToRegistry name glob
+890 silly mapToRegistry using default registry
+891 silly mapToRegistry registry https://registry.npmjs.org/
+892 silly mapToRegistry uri https://registry.npmjs.org/glob
+893 verbose addNameRange registry:https://registry.npmjs.org/glob not in flight; fetching
+894 silly prepareForInstallMany adding lru-cache@2 from minimatch dependencies
+895 silly prepareForInstallMany adding sigmund@~1.0.0 from minimatch dependencies
+896 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/package.json
+897 verbose request uri https://registry.npmjs.org/glob
+898 verbose request no auth needed
+899 info attempt registry request try #1 at 4:30:21 PM
+900 verbose etag "8HEL05R4BOWZCM13ITMB2QQEQ"
+901 http request GET https://registry.npmjs.org/glob
+902 silly cache add args [ 'lru-cache@2', null ]
+903 verbose cache add spec lru-cache@2
+904 silly cache add args [ 'sigmund@~1.0.0', null ]
+905 verbose cache add spec sigmund@~1.0.0
+906 silly cache add parsed spec Result {
+906 silly cache add   raw: 'lru-cache@2',
+906 silly cache add   scope: null,
+906 silly cache add   name: 'lru-cache',
+906 silly cache add   rawSpec: '2',
+906 silly cache add   spec: '>=2.0.0 <3.0.0',
+906 silly cache add   type: 'range' }
+907 silly addNamed lru-cache@>=2.0.0 <3.0.0
+908 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for lru-cache
+909 silly addNameRange { name: 'lru-cache', range: '>=2.0.0 <3.0.0', hasData: false }
+910 silly mapToRegistry name lru-cache
+911 silly mapToRegistry using default registry
+912 silly mapToRegistry registry https://registry.npmjs.org/
+913 silly mapToRegistry uri https://registry.npmjs.org/lru-cache
+914 verbose addNameRange registry:https://registry.npmjs.org/lru-cache not in flight; fetching
+915 silly cache add parsed spec Result {
+915 silly cache add   raw: 'sigmund@~1.0.0',
+915 silly cache add   scope: null,
+915 silly cache add   name: 'sigmund',
+915 silly cache add   rawSpec: '~1.0.0',
+915 silly cache add   spec: '>=1.0.0 <1.1.0',
+915 silly cache add   type: 'range' }
+916 silly addNamed sigmund@>=1.0.0 <1.1.0
+917 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for sigmund
+918 silly addNameRange { name: 'sigmund', range: '>=1.0.0 <1.1.0', hasData: false }
+919 silly mapToRegistry name sigmund
+920 silly mapToRegistry using default registry
+921 silly mapToRegistry registry https://registry.npmjs.org/
+922 silly mapToRegistry uri https://registry.npmjs.org/sigmund
+923 verbose addNameRange registry:https://registry.npmjs.org/sigmund not in flight; fetching
+924 verbose request uri https://registry.npmjs.org/sigmund
+925 verbose request no auth needed
+926 info attempt registry request try #1 at 4:30:21 PM
+927 verbose etag "1TUX00X8YEKNFED6GGWS214S3"
+928 http request GET https://registry.npmjs.org/sigmund
+929 verbose request uri https://registry.npmjs.org/lru-cache
+930 verbose request no auth needed
+931 info attempt registry request try #1 at 4:30:21 PM
+932 verbose etag "EL4OH9P6X2VAFU60S9OK43KY6"
+933 http request GET https://registry.npmjs.org/lru-cache
+934 http 304 https://registry.npmjs.org/glob
+935 verbose headers { date: 'Sun, 29 Nov 2015 23:30:21 GMT',
+935 verbose headers   via: '1.1 varnish',
+935 verbose headers   'cache-control': 'max-age=60',
+935 verbose headers   etag: '"8HEL05R4BOWZCM13ITMB2QQEQ"',
+935 verbose headers   age: '15',
+935 verbose headers   connection: 'keep-alive',
+935 verbose headers   'x-served-by': 'cache-sjc3123-SJC',
+935 verbose headers   'x-cache': 'HIT',
+935 verbose headers   'x-cache-hits': '1',
+935 verbose headers   'x-timer': 'S1448839821.806737,VS0,VE0',
+935 verbose headers   vary: 'Accept' }
+936 silly get cb [ 304,
+936 silly get   { date: 'Sun, 29 Nov 2015 23:30:21 GMT',
+936 silly get     via: '1.1 varnish',
+936 silly get     'cache-control': 'max-age=60',
+936 silly get     etag: '"8HEL05R4BOWZCM13ITMB2QQEQ"',
+936 silly get     age: '15',
+936 silly get     connection: 'keep-alive',
+936 silly get     'x-served-by': 'cache-sjc3123-SJC',
+936 silly get     'x-cache': 'HIT',
+936 silly get     'x-cache-hits': '1',
+936 silly get     'x-timer': 'S1448839821.806737,VS0,VE0',
+936 silly get     vary: 'Accept' } ]
+937 verbose etag https://registry.npmjs.org/glob from cache
+938 verbose get saving glob to /Users/chris/.npm/registry.npmjs.org/glob/.cache.json
+939 silly addNameRange number 2 { name: 'glob', range: '>=3.0.0 <4.0.0', hasData: true }
+940 silly addNameRange versions [ 'glob',
+940 silly addNameRange   [ '1.1.0',
+940 silly addNameRange     '2.0.9',
+940 silly addNameRange     '2.0.8',
+940 silly addNameRange     '2.0.7',
+940 silly addNameRange     '2.1.0',
+940 silly addNameRange     '3.0.0',
+940 silly addNameRange     '3.0.1',
+940 silly addNameRange     '3.1.0',
+940 silly addNameRange     '3.1.1',
+940 silly addNameRange     '3.1.2',
+940 silly addNameRange     '3.1.3',
+940 silly addNameRange     '3.1.4',
+940 silly addNameRange     '3.1.5',
+940 silly addNameRange     '3.1.6',
+940 silly addNameRange     '3.1.7',
+940 silly addNameRange     '3.1.9',
+940 silly addNameRange     '3.1.10',
+940 silly addNameRange     '3.1.11',
+940 silly addNameRange     '3.1.12',
+940 silly addNameRange     '3.1.13',
+940 silly addNameRange     '3.1.14',
+940 silly addNameRange     '3.1.15',
+940 silly addNameRange     '3.1.16',
+940 silly addNameRange     '3.1.17',
+940 silly addNameRange     '3.1.18',
+940 silly addNameRange     '3.1.19',
+940 silly addNameRange     '3.1.20',
+940 silly addNameRange     '3.1.21',
+940 silly addNameRange     '3.2.0',
+940 silly addNameRange     '3.2.1',
+940 silly addNameRange     '3.2.3',
+940 silly addNameRange     '3.2.4',
+940 silly addNameRange     '3.2.5',
+940 silly addNameRange     '3.2.6',
+940 silly addNameRange     '3.2.7',
+940 silly addNameRange     '3.2.8',
+940 silly addNameRange     '3.2.9',
+940 silly addNameRange     '3.2.10',
+940 silly addNameRange     '3.2.11',
+940 silly addNameRange     '4.0.0',
+940 silly addNameRange     '4.0.1',
+940 silly addNameRange     '4.0.2',
+940 silly addNameRange     '4.0.3',
+940 silly addNameRange     '4.0.4',
+940 silly addNameRange     '4.0.5',
+940 silly addNameRange     '4.0.6',
+940 silly addNameRange     '4.1.2-beta',
+940 silly addNameRange     '4.1.2',
+940 silly addNameRange     '4.1.3',
+940 silly addNameRange     '4.1.4',
+940 silly addNameRange     '4.1.5',
+940 silly addNameRange     '4.1.6',
+940 silly addNameRange     '4.2.0',
+940 silly addNameRange     '4.2.1',
+940 silly addNameRange     '4.2.2',
+940 silly addNameRange     '4.3.0',
+940 silly addNameRange     '4.3.1',
+940 silly addNameRange     '4.3.2',
+940 silly addNameRange     '4.3.3',
+940 silly addNameRange     '4.3.4',
+940 silly addNameRange     '4.3.5',
+940 silly addNameRange     '4.4.0',
+940 silly addNameRange     '4.4.2',
+940 silly addNameRange     '4.5.0',
+940 silly addNameRange     '5.0.0',
+940 silly addNameRange     '4.5.1',
+940 silly addNameRange     '5.0.1',
+940 silly addNameRange     '4.5.2',
+940 silly addNameRange     '5.0.2',
+940 silly addNameRange     '4.5.3',
+940 silly addNameRange     '5.0.3',
+940 silly addNameRange     '5.0.4',
+940 silly addNameRange     '5.0.5',
+940 silly addNameRange     '5.0.6',
+940 silly addNameRange     '5.0.7',
+940 silly addNameRange     '5.0.9',
+940 silly addNameRange     '5.0.10',
+940 silly addNameRange     '5.0.11',
+940 silly addNameRange     '5.0.12',
+940 silly addNameRange     '5.0.13',
+940 silly addNameRange     '5.0.14',
+940 silly addNameRange     '5.0.15',
+940 silly addNameRange     '6.0.1' ] ]
+941 silly addNamed glob@3.2.11
+942 verbose addNamed "3.2.11" is a plain semver version for glob
+943 silly cache afterAdd glob@3.2.11
+944 verbose afterAdd /Users/chris/.npm/glob/3.2.11/package/package.json not in flight; writing
+945 verbose afterAdd /Users/chris/.npm/glob/3.2.11/package/package.json written
+946 silly install resolved [ { author:
+946 silly install resolved      { name: 'Isaac Z. Schlueter',
+946 silly install resolved        email: 'i@izs.me',
+946 silly install resolved        url: 'http://blog.izs.me/' },
+946 silly install resolved     name: 'glob',
+946 silly install resolved     description: 'a little globber',
+946 silly install resolved     version: '3.2.11',
+946 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/node-glob.git' },
+946 silly install resolved     main: 'glob.js',
+946 silly install resolved     engines: { node: '*' },
+946 silly install resolved     dependencies: { inherits: '2', minimatch: '0.3' },
+946 silly install resolved     devDependencies: { tap: '~0.4.0', mkdirp: '0', rimraf: '1' },
+946 silly install resolved     scripts:
+946 silly install resolved      { test: 'tap test/*.js',
+946 silly install resolved        'test-regen': 'TEST_REGEN=1 node test/00-setup.js' },
+946 silly install resolved     license: 'BSD',
+946 silly install resolved     gitHead: '73f57e99510582b2024b762305970ebcf9b70aa2',
+946 silly install resolved     bugs: { url: 'https://github.com/isaacs/node-glob/issues' },
+946 silly install resolved     homepage: 'https://github.com/isaacs/node-glob',
+946 silly install resolved     _id: 'glob@3.2.11',
+946 silly install resolved     _shasum: '4a973f635b9190f715d10987d5c00fd2815ebe3d',
+946 silly install resolved     _from: 'glob@>=3.0.0 <4.0.0',
+946 silly install resolved     _npmVersion: '1.4.10',
+946 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+946 silly install resolved     maintainers: [ [Object] ],
+946 silly install resolved     dist:
+946 silly install resolved      { shasum: '4a973f635b9190f715d10987d5c00fd2815ebe3d',
+946 silly install resolved        tarball: 'http://registry.npmjs.org/glob/-/glob-3.2.11.tgz' },
+946 silly install resolved     directories: {},
+946 silly install resolved     _resolved: 'https://registry.npmjs.org/glob/-/glob-3.2.11.tgz',
+946 silly install resolved     readme: 'ERROR: No README data found!' } ]
+947 info install glob@3.2.11 into /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset
+948 info installOne glob@3.2.11
+949 verbose installOne of glob to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset not in flight; installing
+950 verbose lock using /Users/chris/.npm/_locks/glob-10e1128a2d1ad179.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob
+951 silly install write writing glob 3.2.11 to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob
+952 verbose unbuild lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob
+953 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob is being purged from base /usr/local
+954 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob
+955 verbose tar unpack /Users/chris/.npm/glob/3.2.11/package.tgz
+956 verbose tar unpacking to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob
+957 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob is being purged
+958 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob
+959 silly gunzTarPerm modes [ '755', '644' ]
+960 silly gunzTarPerm extractEntry package.json
+961 silly gunzTarPerm extractEntry .npmignore
+962 silly gunzTarPerm extractEntry README.md
+963 silly gunzTarPerm extractEntry LICENSE
+964 silly gunzTarPerm extractEntry glob.js
+965 silly gunzTarPerm extractEntry .travis.yml
+966 silly gunzTarPerm extractEntry examples/g.js
+967 silly gunzTarPerm extractEntry examples/usr-local.js
+968 silly gunzTarPerm extractEntry test/00-setup.js
+969 silly gunzTarPerm extractEntry test/cwd-test.js
+970 silly gunzTarPerm extractEntry test/globstar-match.js
+971 silly gunzTarPerm extractEntry test/mark.js
+972 silly gunzTarPerm extractEntry test/stat.js
+973 silly gunzTarPerm extractEntry test/bash-comparison.js
+974 silly gunzTarPerm extractEntry test/pause-resume.js
+975 silly gunzTarPerm extractEntry test/readme-issue.js
+976 silly gunzTarPerm extractEntry test/root-nomount.js
+977 silly gunzTarPerm extractEntry test/root.js
+978 silly gunzTarPerm extractEntry test/new-glob-optional-options.js
+979 silly gunzTarPerm extractEntry test/zz-cleanup.js
+980 silly gunzTarPerm extractEntry test/nocase-nomagic.js
+981 silly gunzTarPerm extractEntry test/bash-results.json
+982 verbose write writing to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/package.json
+983 info preinstall glob@3.2.11
+984 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/package.json
+985 silly prepareForInstallMany adding inherits@2 from glob dependencies
+986 silly prepareForInstallMany adding minimatch@0.3 from glob dependencies
+987 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/package.json
+988 silly cache add args [ 'inherits@2', null ]
+989 verbose cache add spec inherits@2
+990 silly cache add args [ 'minimatch@0.3', null ]
+991 verbose cache add spec minimatch@0.3
+992 silly cache add parsed spec Result {
+992 silly cache add   raw: 'inherits@2',
+992 silly cache add   scope: null,
+992 silly cache add   name: 'inherits',
+992 silly cache add   rawSpec: '2',
+992 silly cache add   spec: '>=2.0.0 <3.0.0',
+992 silly cache add   type: 'range' }
+993 silly addNamed inherits@>=2.0.0 <3.0.0
+994 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for inherits
+995 silly addNameRange { name: 'inherits', range: '>=2.0.0 <3.0.0', hasData: false }
+996 silly mapToRegistry name inherits
+997 silly mapToRegistry using default registry
+998 silly mapToRegistry registry https://registry.npmjs.org/
+999 silly mapToRegistry uri https://registry.npmjs.org/inherits
+1000 verbose addNameRange registry:https://registry.npmjs.org/inherits not in flight; fetching
+1001 silly cache add parsed spec Result {
+1001 silly cache add   raw: 'minimatch@0.3',
+1001 silly cache add   scope: null,
+1001 silly cache add   name: 'minimatch',
+1001 silly cache add   rawSpec: '0.3',
+1001 silly cache add   spec: '>=0.3.0 <0.4.0',
+1001 silly cache add   type: 'range' }
+1002 silly addNamed minimatch@>=0.3.0 <0.4.0
+1003 verbose addNamed ">=0.3.0 <0.4.0" is a valid semver range for minimatch
+1004 silly addNameRange { name: 'minimatch', range: '>=0.3.0 <0.4.0', hasData: false }
+1005 silly mapToRegistry name minimatch
+1006 silly mapToRegistry using default registry
+1007 silly mapToRegistry registry https://registry.npmjs.org/
+1008 silly mapToRegistry uri https://registry.npmjs.org/minimatch
+1009 verbose addNameRange registry:https://registry.npmjs.org/minimatch not in flight; fetching
+1010 verbose request uri https://registry.npmjs.org/inherits
+1011 verbose request no auth needed
+1012 info attempt registry request try #1 at 4:30:21 PM
+1013 verbose etag "4FJ6NZOHSPQG4XHIJ9FQBFUBG"
+1014 http request GET https://registry.npmjs.org/inherits
+1015 verbose get https://registry.npmjs.org/minimatch not expired, no request
+1016 silly addNameRange number 2 { name: 'minimatch', range: '>=0.3.0 <0.4.0', hasData: true }
+1017 silly addNameRange versions [ 'minimatch',
+1017 silly addNameRange   [ '0.0.1',
+1017 silly addNameRange     '0.0.2',
+1017 silly addNameRange     '0.0.4',
+1017 silly addNameRange     '0.0.5',
+1017 silly addNameRange     '0.1.1',
+1017 silly addNameRange     '0.1.2',
+1017 silly addNameRange     '0.1.3',
+1017 silly addNameRange     '0.1.4',
+1017 silly addNameRange     '0.1.5',
+1017 silly addNameRange     '0.2.0',
+1017 silly addNameRange     '0.2.2',
+1017 silly addNameRange     '0.2.3',
+1017 silly addNameRange     '0.2.4',
+1017 silly addNameRange     '0.2.5',
+1017 silly addNameRange     '0.2.6',
+1017 silly addNameRange     '0.2.7',
+1017 silly addNameRange     '0.2.8',
+1017 silly addNameRange     '0.2.9',
+1017 silly addNameRange     '0.2.10',
+1017 silly addNameRange     '0.2.11',
+1017 silly addNameRange     '0.2.12',
+1017 silly addNameRange     '0.2.13',
+1017 silly addNameRange     '0.2.14',
+1017 silly addNameRange     '0.3.0',
+1017 silly addNameRange     '0.4.0',
+1017 silly addNameRange     '1.0.0',
+1017 silly addNameRange     '2.0.0',
+1017 silly addNameRange     '2.0.1',
+1017 silly addNameRange     '2.0.2',
+1017 silly addNameRange     '2.0.3',
+1017 silly addNameRange     '2.0.4',
+1017 silly addNameRange     '2.0.5',
+1017 silly addNameRange     '2.0.6',
+1017 silly addNameRange     '2.0.7',
+1017 silly addNameRange     '2.0.8',
+1017 silly addNameRange     '2.0.9',
+1017 silly addNameRange     '2.0.10',
+1017 silly addNameRange     '3.0.0' ] ]
+1018 silly addNamed minimatch@0.3.0
+1019 verbose addNamed "0.3.0" is a plain semver version for minimatch
+1020 silly cache afterAdd minimatch@0.3.0
+1021 verbose afterAdd /Users/chris/.npm/minimatch/0.3.0/package/package.json not in flight; writing
+1022 verbose afterAdd /Users/chris/.npm/minimatch/0.3.0/package/package.json written
+1023 http 304 https://registry.npmjs.org/lru-cache
+1024 verbose headers { date: 'Sun, 29 Nov 2015 23:30:21 GMT',
+1024 verbose headers   via: '1.1 varnish',
+1024 verbose headers   'cache-control': 'max-age=60',
+1024 verbose headers   etag: '"EL4OH9P6X2VAFU60S9OK43KY6"',
+1024 verbose headers   age: '54',
+1024 verbose headers   connection: 'keep-alive',
+1024 verbose headers   'x-served-by': 'cache-sjc3131-SJC',
+1024 verbose headers   'x-cache': 'HIT',
+1024 verbose headers   'x-cache-hits': '2',
+1024 verbose headers   'x-timer': 'S1448839821.840768,VS0,VE0',
+1024 verbose headers   vary: 'Accept' }
+1025 silly get cb [ 304,
+1025 silly get   { date: 'Sun, 29 Nov 2015 23:30:21 GMT',
+1025 silly get     via: '1.1 varnish',
+1025 silly get     'cache-control': 'max-age=60',
+1025 silly get     etag: '"EL4OH9P6X2VAFU60S9OK43KY6"',
+1025 silly get     age: '54',
+1025 silly get     connection: 'keep-alive',
+1025 silly get     'x-served-by': 'cache-sjc3131-SJC',
+1025 silly get     'x-cache': 'HIT',
+1025 silly get     'x-cache-hits': '2',
+1025 silly get     'x-timer': 'S1448839821.840768,VS0,VE0',
+1025 silly get     vary: 'Accept' } ]
+1026 verbose etag https://registry.npmjs.org/lru-cache from cache
+1027 verbose get saving lru-cache to /Users/chris/.npm/registry.npmjs.org/lru-cache/.cache.json
+1028 silly addNameRange number 2 { name: 'lru-cache', range: '>=2.0.0 <3.0.0', hasData: true }
+1029 silly addNameRange versions [ 'lru-cache',
+1029 silly addNameRange   [ '1.0.1',
+1029 silly addNameRange     '1.0.2',
+1029 silly addNameRange     '1.0.3',
+1029 silly addNameRange     '1.0.4',
+1029 silly addNameRange     '1.0.5',
+1029 silly addNameRange     '1.0.6',
+1029 silly addNameRange     '1.1.0',
+1029 silly addNameRange     '1.1.1',
+1029 silly addNameRange     '2.0.0',
+1029 silly addNameRange     '2.0.1',
+1029 silly addNameRange     '2.0.2',
+1029 silly addNameRange     '2.0.3',
+1029 silly addNameRange     '2.0.4',
+1029 silly addNameRange     '2.1.0',
+1029 silly addNameRange     '2.2.0',
+1029 silly addNameRange     '2.2.1',
+1029 silly addNameRange     '2.2.2',
+1029 silly addNameRange     '2.2.4',
+1029 silly addNameRange     '2.3.0',
+1029 silly addNameRange     '2.3.1',
+1029 silly addNameRange     '2.5.0',
+1029 silly addNameRange     '2.5.1',
+1029 silly addNameRange     '2.5.2',
+1029 silly addNameRange     '2.6.0',
+1029 silly addNameRange     '2.6.1',
+1029 silly addNameRange     '2.6.2',
+1029 silly addNameRange     '2.6.3',
+1029 silly addNameRange     '2.6.4',
+1029 silly addNameRange     '2.6.5',
+1029 silly addNameRange     '2.7.0',
+1029 silly addNameRange     '2.7.1',
+1029 silly addNameRange     '2.7.2',
+1029 silly addNameRange     '2.7.3',
+1029 silly addNameRange     '3.0.0',
+1029 silly addNameRange     '3.1.0',
+1029 silly addNameRange     '3.1.1',
+1029 silly addNameRange     '3.1.2',
+1029 silly addNameRange     '3.2.0' ] ]
+1030 silly addNamed lru-cache@2.7.3
+1031 verbose addNamed "2.7.3" is a plain semver version for lru-cache
+1032 silly cache afterAdd lru-cache@2.7.3
+1033 verbose afterAdd /Users/chris/.npm/lru-cache/2.7.3/package/package.json not in flight; writing
+1034 verbose afterAdd /Users/chris/.npm/lru-cache/2.7.3/package/package.json written
+1035 http 304 https://registry.npmjs.org/sigmund
+1036 verbose headers { date: 'Sun, 29 Nov 2015 23:30:21 GMT',
+1036 verbose headers   via: '1.1 varnish',
+1036 verbose headers   'cache-control': 'max-age=60',
+1036 verbose headers   etag: '"1TUX00X8YEKNFED6GGWS214S3"',
+1036 verbose headers   age: '0',
+1036 verbose headers   connection: 'keep-alive',
+1036 verbose headers   'x-served-by': 'cache-sjc3133-SJC',
+1036 verbose headers   'x-cache': 'HIT',
+1036 verbose headers   'x-cache-hits': '1',
+1036 verbose headers   'x-timer': 'S1448839821.842699,VS0,VE42',
+1036 verbose headers   vary: 'Accept' }
+1037 silly get cb [ 304,
+1037 silly get   { date: 'Sun, 29 Nov 2015 23:30:21 GMT',
+1037 silly get     via: '1.1 varnish',
+1037 silly get     'cache-control': 'max-age=60',
+1037 silly get     etag: '"1TUX00X8YEKNFED6GGWS214S3"',
+1037 silly get     age: '0',
+1037 silly get     connection: 'keep-alive',
+1037 silly get     'x-served-by': 'cache-sjc3133-SJC',
+1037 silly get     'x-cache': 'HIT',
+1037 silly get     'x-cache-hits': '1',
+1037 silly get     'x-timer': 'S1448839821.842699,VS0,VE42',
+1037 silly get     vary: 'Accept' } ]
+1038 verbose etag https://registry.npmjs.org/sigmund from cache
+1039 verbose get saving sigmund to /Users/chris/.npm/registry.npmjs.org/sigmund/.cache.json
+1040 silly addNameRange number 2 { name: 'sigmund', range: '>=1.0.0 <1.1.0', hasData: true }
+1041 silly addNameRange versions [ 'sigmund', [ '1.0.0', '1.0.1' ] ]
+1042 silly addNamed sigmund@1.0.1
+1043 verbose addNamed "1.0.1" is a plain semver version for sigmund
+1044 silly cache afterAdd sigmund@1.0.1
+1045 verbose afterAdd /Users/chris/.npm/sigmund/1.0.1/package/package.json not in flight; writing
+1046 verbose afterAdd /Users/chris/.npm/sigmund/1.0.1/package/package.json written
+1047 silly install resolved [ { name: 'lru-cache',
+1047 silly install resolved     description: 'A cache object that deletes the least-recently-used items.',
+1047 silly install resolved     version: '2.7.3',
+1047 silly install resolved     author: { name: 'Isaac Z. Schlueter', email: 'i@izs.me' },
+1047 silly install resolved     keywords: [ 'mru', 'lru', 'cache' ],
+1047 silly install resolved     scripts: { test: 'tap test --gc' },
+1047 silly install resolved     main: 'lib/lru-cache.js',
+1047 silly install resolved     repository:
+1047 silly install resolved      { type: 'git',
+1047 silly install resolved        url: 'git://github.com/isaacs/node-lru-cache.git' },
+1047 silly install resolved     devDependencies: { tap: '^1.2.0', weak: '' },
+1047 silly install resolved     license: 'ISC',
+1047 silly install resolved     gitHead: '292048199f6d28b77fbe584279a1898e25e4c714',
+1047 silly install resolved     bugs: { url: 'https://github.com/isaacs/node-lru-cache/issues' },
+1047 silly install resolved     homepage: 'https://github.com/isaacs/node-lru-cache#readme',
+1047 silly install resolved     _id: 'lru-cache@2.7.3',
+1047 silly install resolved     _shasum: '6d4524e8b955f95d4f5b58851ce21dd72fb4e952',
+1047 silly install resolved     _from: 'lru-cache@>=2.0.0 <3.0.0',
+1047 silly install resolved     _npmVersion: '3.3.2',
+1047 silly install resolved     _nodeVersion: '4.0.0',
+1047 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+1047 silly install resolved     dist:
+1047 silly install resolved      { shasum: '6d4524e8b955f95d4f5b58851ce21dd72fb4e952',
+1047 silly install resolved        tarball: 'http://registry.npmjs.org/lru-cache/-/lru-cache-2.7.3.tgz' },
+1047 silly install resolved     maintainers: [ [Object], [Object] ],
+1047 silly install resolved     directories: {},
+1047 silly install resolved     _resolved: 'https://registry.npmjs.org/lru-cache/-/lru-cache-2.7.3.tgz',
+1047 silly install resolved     readme: 'ERROR: No README data found!' },
+1047 silly install resolved   { name: 'sigmund',
+1047 silly install resolved     version: '1.0.1',
+1047 silly install resolved     description: 'Quick and dirty signatures for Objects.',
+1047 silly install resolved     main: 'sigmund.js',
+1047 silly install resolved     directories: { test: 'test' },
+1047 silly install resolved     dependencies: {},
+1047 silly install resolved     devDependencies: { tap: '~0.3.0' },
+1047 silly install resolved     scripts: { test: 'tap test/*.js', bench: 'node bench.js' },
+1047 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/sigmund.git' },
+1047 silly install resolved     keywords: [ 'object', 'signature', 'key', 'data', 'psychoanalysis' ],
+1047 silly install resolved     author:
+1047 silly install resolved      { name: 'Isaac Z. Schlueter',
+1047 silly install resolved        email: 'i@izs.me',
+1047 silly install resolved        url: 'http://blog.izs.me/' },
+1047 silly install resolved     license: 'ISC',
+1047 silly install resolved     gitHead: '527f97aa5bb253d927348698c0cd3bb267d098c6',
+1047 silly install resolved     bugs: { url: 'https://github.com/isaacs/sigmund/issues' },
+1047 silly install resolved     homepage: 'https://github.com/isaacs/sigmund#readme',
+1047 silly install resolved     _id: 'sigmund@1.0.1',
+1047 silly install resolved     _shasum: '3ff21f198cad2175f9f3b781853fd94d0d19b590',
+1047 silly install resolved     _from: 'sigmund@>=1.0.0 <1.1.0',
+1047 silly install resolved     _npmVersion: '2.10.0',
+1047 silly install resolved     _nodeVersion: '2.0.1',
+1047 silly install resolved     _npmUser: { name: 'isaacs', email: 'isaacs@npmjs.com' },
+1047 silly install resolved     dist:
+1047 silly install resolved      { shasum: '3ff21f198cad2175f9f3b781853fd94d0d19b590',
+1047 silly install resolved        tarball: 'http://registry.npmjs.org/sigmund/-/sigmund-1.0.1.tgz' },
+1047 silly install resolved     maintainers: [ [Object] ],
+1047 silly install resolved     _resolved: 'https://registry.npmjs.org/sigmund/-/sigmund-1.0.1.tgz',
+1047 silly install resolved     readme: 'ERROR: No README data found!' } ]
+1048 info install lru-cache@2.7.3 into /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch
+1049 info install sigmund@1.0.1 into /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch
+1050 info installOne lru-cache@2.7.3
+1051 verbose installOne of lru-cache to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch not in flight; installing
+1052 info installOne sigmund@1.0.1
+1053 verbose installOne of sigmund to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch not in flight; installing
+1054 verbose lock using /Users/chris/.npm/_locks/lru-cache-7291d9d698915630.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/lru-cache
+1055 silly install write writing lru-cache 2.7.3 to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/lru-cache
+1056 verbose lock using /Users/chris/.npm/_locks/sigmund-b02ca93a648ff42c.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/sigmund
+1057 silly install write writing sigmund 1.0.1 to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/sigmund
+1058 verbose unbuild lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/lru-cache
+1059 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/lru-cache is being purged from base /usr/local
+1060 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/lru-cache
+1061 verbose unbuild lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/sigmund
+1062 verbose tar unpack /Users/chris/.npm/lru-cache/2.7.3/package.tgz
+1063 verbose tar unpacking to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/lru-cache
+1064 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/lru-cache is being purged
+1065 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/lru-cache
+1066 silly gunzTarPerm modes [ '755', '644' ]
+1067 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/sigmund is being purged from base /usr/local
+1068 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/sigmund
+1069 verbose tar unpack /Users/chris/.npm/sigmund/1.0.1/package.tgz
+1070 verbose tar unpacking to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/sigmund
+1071 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/sigmund is being purged
+1072 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/sigmund
+1073 silly gunzTarPerm modes [ '755', '644' ]
+1074 silly gunzTarPerm extractEntry package.json
+1075 silly gunzTarPerm extractEntry package.json
+1076 silly gunzTarPerm extractEntry .npmignore
+1077 silly gunzTarPerm extractEntry README.md
+1078 silly gunzTarPerm extractEntry README.md
+1079 silly gunzTarPerm extractEntry LICENSE
+1080 silly gunzTarPerm extractEntry LICENSE
+1081 silly gunzTarPerm extractEntry .travis.yml
+1082 silly gunzTarPerm extractEntry bench.js
+1083 silly gunzTarPerm extractEntry sigmund.js
+1084 silly gunzTarPerm extractEntry CONTRIBUTORS
+1085 silly gunzTarPerm extractEntry lib/lru-cache.js
+1086 silly gunzTarPerm extractEntry test/basic.js
+1087 silly gunzTarPerm extractEntry test/basic.js
+1088 silly gunzTarPerm extractEntry test/foreach.js
+1089 silly gunzTarPerm extractEntry test/memory-leak.js
+1090 silly gunzTarPerm extractEntry test/serialize.js
+1091 verbose write writing to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/sigmund/package.json
+1092 info preinstall sigmund@1.0.1
+1093 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/sigmund/package.json
+1094 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/sigmund/package.json
+1095 silly install resolved []
+1096 verbose about to build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/sigmund
+1097 info build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/sigmund
+1098 info linkStuff sigmund@1.0.1
+1099 silly linkStuff sigmund@1.0.1 has /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules as its parent node_modules
+1100 silly linkStuff sigmund@1.0.1 is part of a global install
+1101 silly linkStuff sigmund@1.0.1 is installed into a global node_modules
+1102 verbose linkBins sigmund@1.0.1
+1103 verbose linkMans sigmund@1.0.1
+1104 verbose rebuildBundles sigmund@1.0.1
+1105 info install sigmund@1.0.1
+1106 info postinstall sigmund@1.0.1
+1107 verbose unlock done using /Users/chris/.npm/_locks/sigmund-b02ca93a648ff42c.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/sigmund
+1108 verbose write writing to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/lru-cache/package.json
+1109 info preinstall lru-cache@2.7.3
+1110 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/lru-cache/package.json
+1111 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/lru-cache/package.json
+1112 silly install resolved []
+1113 verbose about to build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/lru-cache
+1114 info build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/lru-cache
+1115 info linkStuff lru-cache@2.7.3
+1116 silly linkStuff lru-cache@2.7.3 has /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules as its parent node_modules
+1117 silly linkStuff lru-cache@2.7.3 is part of a global install
+1118 silly linkStuff lru-cache@2.7.3 is installed into a global node_modules
+1119 verbose linkBins lru-cache@2.7.3
+1120 verbose linkMans lru-cache@2.7.3
+1121 verbose rebuildBundles lru-cache@2.7.3
+1122 info install lru-cache@2.7.3
+1123 info postinstall lru-cache@2.7.3
+1124 verbose unlock done using /Users/chris/.npm/_locks/lru-cache-7291d9d698915630.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch/node_modules/lru-cache
+1125 verbose about to build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch
+1126 info build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch
+1127 info linkStuff minimatch@0.2.14
+1128 silly linkStuff minimatch@0.2.14 has /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules as its parent node_modules
+1129 silly linkStuff minimatch@0.2.14 is part of a global install
+1130 silly linkStuff minimatch@0.2.14 is installed into a global node_modules
+1131 verbose linkBins minimatch@0.2.14
+1132 verbose linkMans minimatch@0.2.14
+1133 verbose rebuildBundles minimatch@0.2.14
+1134 verbose rebuildBundles [ 'lru-cache', 'sigmund' ]
+1135 info install minimatch@0.2.14
+1136 info postinstall minimatch@0.2.14
+1137 verbose unlock done using /Users/chris/.npm/_locks/minimatch-61e029b835252def.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/minimatch
+1138 http 304 https://registry.npmjs.org/inherits
+1139 verbose headers { date: 'Sun, 29 Nov 2015 23:30:22 GMT',
+1139 verbose headers   via: '1.1 varnish',
+1139 verbose headers   'cache-control': 'max-age=60',
+1139 verbose headers   etag: '"4FJ6NZOHSPQG4XHIJ9FQBFUBG"',
+1139 verbose headers   age: '17',
+1139 verbose headers   connection: 'keep-alive',
+1139 verbose headers   'x-served-by': 'cache-sjc3126-SJC',
+1139 verbose headers   'x-cache': 'HIT',
+1139 verbose headers   'x-cache-hits': '1',
+1139 verbose headers   'x-timer': 'S1448839822.068150,VS0,VE0',
+1139 verbose headers   vary: 'Accept' }
+1140 silly get cb [ 304,
+1140 silly get   { date: 'Sun, 29 Nov 2015 23:30:22 GMT',
+1140 silly get     via: '1.1 varnish',
+1140 silly get     'cache-control': 'max-age=60',
+1140 silly get     etag: '"4FJ6NZOHSPQG4XHIJ9FQBFUBG"',
+1140 silly get     age: '17',
+1140 silly get     connection: 'keep-alive',
+1140 silly get     'x-served-by': 'cache-sjc3126-SJC',
+1140 silly get     'x-cache': 'HIT',
+1140 silly get     'x-cache-hits': '1',
+1140 silly get     'x-timer': 'S1448839822.068150,VS0,VE0',
+1140 silly get     vary: 'Accept' } ]
+1141 verbose etag https://registry.npmjs.org/inherits from cache
+1142 verbose get saving inherits to /Users/chris/.npm/registry.npmjs.org/inherits/.cache.json
+1143 silly addNameRange number 2 { name: 'inherits', range: '>=2.0.0 <3.0.0', hasData: true }
+1144 silly addNameRange versions [ 'inherits', [ '1.0.0', '2.0.0', '2.0.1', '1.0.1', '1.0.2' ] ]
+1145 silly addNamed inherits@2.0.1
+1146 verbose addNamed "2.0.1" is a plain semver version for inherits
+1147 silly cache afterAdd inherits@2.0.1
+1148 verbose afterAdd /Users/chris/.npm/inherits/2.0.1/package/package.json not in flight; writing
+1149 verbose afterAdd /Users/chris/.npm/inherits/2.0.1/package/package.json written
+1150 silly install resolved [ { author:
+1150 silly install resolved      { name: 'Isaac Z. Schlueter',
+1150 silly install resolved        email: 'i@izs.me',
+1150 silly install resolved        url: 'http://blog.izs.me' },
+1150 silly install resolved     name: 'minimatch',
+1150 silly install resolved     description: 'a glob matcher in javascript',
+1150 silly install resolved     version: '0.3.0',
+1150 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/minimatch.git' },
+1150 silly install resolved     main: 'minimatch.js',
+1150 silly install resolved     scripts: { test: 'tap test/*.js' },
+1150 silly install resolved     engines: { node: '*' },
+1150 silly install resolved     dependencies: { 'lru-cache': '2', sigmund: '~1.0.0' },
+1150 silly install resolved     devDependencies: { tap: '' },
+1150 silly install resolved     license:
+1150 silly install resolved      { type: 'MIT',
+1150 silly install resolved        url: 'http://github.com/isaacs/minimatch/raw/master/LICENSE' },
+1150 silly install resolved     bugs: { url: 'https://github.com/isaacs/minimatch/issues' },
+1150 silly install resolved     homepage: 'https://github.com/isaacs/minimatch',
+1150 silly install resolved     _id: 'minimatch@0.3.0',
+1150 silly install resolved     _shasum: '275d8edaac4f1bb3326472089e7949c8394699dd',
+1150 silly install resolved     _from: 'minimatch@>=0.3.0 <0.4.0',
+1150 silly install resolved     _npmVersion: '1.4.10',
+1150 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+1150 silly install resolved     maintainers: [ [Object] ],
+1150 silly install resolved     dist:
+1150 silly install resolved      { shasum: '275d8edaac4f1bb3326472089e7949c8394699dd',
+1150 silly install resolved        tarball: 'http://registry.npmjs.org/minimatch/-/minimatch-0.3.0.tgz' },
+1150 silly install resolved     directories: {},
+1150 silly install resolved     _resolved: 'https://registry.npmjs.org/minimatch/-/minimatch-0.3.0.tgz',
+1150 silly install resolved     readme: 'ERROR: No README data found!' },
+1150 silly install resolved   { name: 'inherits',
+1150 silly install resolved     description: 'Browser-friendly inheritance fully compatible with standard node.js inherits()',
+1150 silly install resolved     version: '2.0.1',
+1150 silly install resolved     keywords:
+1150 silly install resolved      [ 'inheritance',
+1150 silly install resolved        'class',
+1150 silly install resolved        'klass',
+1150 silly install resolved        'oop',
+1150 silly install resolved        'object-oriented',
+1150 silly install resolved        'inherits',
+1150 silly install resolved        'browser',
+1150 silly install resolved        'browserify' ],
+1150 silly install resolved     main: './inherits.js',
+1150 silly install resolved     browser: './inherits_browser.js',
+1150 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/inherits.git' },
+1150 silly install resolved     license: 'ISC',
+1150 silly install resolved     scripts: { test: 'node test' },
+1150 silly install resolved     bugs: { url: 'https://github.com/isaacs/inherits/issues' },
+1150 silly install resolved     _id: 'inherits@2.0.1',
+1150 silly install resolved     dist:
+1150 silly install resolved      { shasum: 'b17d08d326b4423e568eff719f91b0b1cbdf69f1',
+1150 silly install resolved        tarball: 'http://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz' },
+1150 silly install resolved     _from: 'inherits@>=2.0.0 <3.0.0',
+1150 silly install resolved     _npmVersion: '1.3.8',
+1150 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+1150 silly install resolved     maintainers: [ [Object] ],
+1150 silly install resolved     directories: {},
+1150 silly install resolved     _shasum: 'b17d08d326b4423e568eff719f91b0b1cbdf69f1',
+1150 silly install resolved     _resolved: 'https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz',
+1150 silly install resolved     readme: 'ERROR: No README data found!',
+1150 silly install resolved     homepage: 'https://github.com/isaacs/inherits#readme' } ]
+1151 info install minimatch@0.3.0 into /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob
+1152 info install inherits@2.0.1 into /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob
+1153 info installOne minimatch@0.3.0
+1154 verbose installOne of minimatch to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob not in flight; installing
+1155 info installOne inherits@2.0.1
+1156 verbose installOne of inherits to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob not in flight; installing
+1157 verbose lock using /Users/chris/.npm/_locks/minimatch-934da0a974d18660.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch
+1158 silly install write writing minimatch 0.3.0 to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch
+1159 verbose lock using /Users/chris/.npm/_locks/inherits-294c6fcc74913f73.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/inherits
+1160 silly install write writing inherits 2.0.1 to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/inherits
+1161 verbose unbuild lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch
+1162 verbose unbuild lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/inherits
+1163 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch is being purged from base /usr/local
+1164 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch
+1165 verbose tar unpack /Users/chris/.npm/minimatch/0.3.0/package.tgz
+1166 verbose tar unpacking to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch
+1167 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch is being purged
+1168 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch
+1169 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/inherits is being purged from base /usr/local
+1170 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/inherits
+1171 silly gunzTarPerm modes [ '755', '644' ]
+1172 verbose tar unpack /Users/chris/.npm/inherits/2.0.1/package.tgz
+1173 verbose tar unpacking to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/inherits
+1174 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/inherits is being purged
+1175 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/inherits
+1176 silly gunzTarPerm modes [ '755', '644' ]
+1177 silly gunzTarPerm extractEntry package.json
+1178 silly gunzTarPerm extractEntry package.json
+1179 silly gunzTarPerm extractEntry .npmignore
+1180 silly gunzTarPerm extractEntry README.md
+1181 silly gunzTarPerm extractEntry README.md
+1182 silly gunzTarPerm extractEntry LICENSE
+1183 silly gunzTarPerm extractEntry inherits.js
+1184 silly gunzTarPerm extractEntry inherits_browser.js
+1185 silly gunzTarPerm extractEntry LICENSE
+1186 silly gunzTarPerm extractEntry minimatch.js
+1187 silly gunzTarPerm extractEntry test.js
+1188 silly gunzTarPerm extractEntry test/basic.js
+1189 silly gunzTarPerm extractEntry test/brace-expand.js
+1190 silly gunzTarPerm extractEntry test/caching.js
+1191 silly gunzTarPerm extractEntry test/defaults.js
+1192 silly gunzTarPerm extractEntry test/extglob-ending-with-state-char.js
+1193 verbose write writing to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/inherits/package.json
+1194 info preinstall inherits@2.0.1
+1195 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/inherits/package.json
+1196 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/inherits/package.json
+1197 silly install resolved []
+1198 verbose about to build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/inherits
+1199 info build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/inherits
+1200 info linkStuff inherits@2.0.1
+1201 silly linkStuff inherits@2.0.1 has /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules as its parent node_modules
+1202 silly linkStuff inherits@2.0.1 is part of a global install
+1203 silly linkStuff inherits@2.0.1 is installed into a global node_modules
+1204 verbose linkBins inherits@2.0.1
+1205 verbose linkMans inherits@2.0.1
+1206 verbose rebuildBundles inherits@2.0.1
+1207 info install inherits@2.0.1
+1208 info postinstall inherits@2.0.1
+1209 verbose unlock done using /Users/chris/.npm/_locks/inherits-294c6fcc74913f73.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/inherits
+1210 verbose write writing to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/package.json
+1211 info preinstall minimatch@0.3.0
+1212 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/package.json
+1213 silly prepareForInstallMany adding lru-cache@2 from minimatch dependencies
+1214 silly prepareForInstallMany adding sigmund@~1.0.0 from minimatch dependencies
+1215 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/package.json
+1216 silly cache add args [ 'lru-cache@2', null ]
+1217 verbose cache add spec lru-cache@2
+1218 silly cache add args [ 'sigmund@~1.0.0', null ]
+1219 verbose cache add spec sigmund@~1.0.0
+1220 silly cache add parsed spec Result {
+1220 silly cache add   raw: 'lru-cache@2',
+1220 silly cache add   scope: null,
+1220 silly cache add   name: 'lru-cache',
+1220 silly cache add   rawSpec: '2',
+1220 silly cache add   spec: '>=2.0.0 <3.0.0',
+1220 silly cache add   type: 'range' }
+1221 silly addNamed lru-cache@>=2.0.0 <3.0.0
+1222 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for lru-cache
+1223 silly addNameRange { name: 'lru-cache', range: '>=2.0.0 <3.0.0', hasData: false }
+1224 silly mapToRegistry name lru-cache
+1225 silly mapToRegistry using default registry
+1226 silly mapToRegistry registry https://registry.npmjs.org/
+1227 silly mapToRegistry uri https://registry.npmjs.org/lru-cache
+1228 verbose addNameRange registry:https://registry.npmjs.org/lru-cache not in flight; fetching
+1229 silly cache add parsed spec Result {
+1229 silly cache add   raw: 'sigmund@~1.0.0',
+1229 silly cache add   scope: null,
+1229 silly cache add   name: 'sigmund',
+1229 silly cache add   rawSpec: '~1.0.0',
+1229 silly cache add   spec: '>=1.0.0 <1.1.0',
+1229 silly cache add   type: 'range' }
+1230 silly addNamed sigmund@>=1.0.0 <1.1.0
+1231 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for sigmund
+1232 silly addNameRange { name: 'sigmund', range: '>=1.0.0 <1.1.0', hasData: false }
+1233 silly mapToRegistry name sigmund
+1234 silly mapToRegistry using default registry
+1235 silly mapToRegistry registry https://registry.npmjs.org/
+1236 silly mapToRegistry uri https://registry.npmjs.org/sigmund
+1237 verbose addNameRange registry:https://registry.npmjs.org/sigmund not in flight; fetching
+1238 verbose get https://registry.npmjs.org/sigmund not expired, no request
+1239 silly addNameRange number 2 { name: 'sigmund', range: '>=1.0.0 <1.1.0', hasData: true }
+1240 silly addNameRange versions [ 'sigmund', [ '1.0.0', '1.0.1' ] ]
+1241 silly addNamed sigmund@1.0.1
+1242 verbose addNamed "1.0.1" is a plain semver version for sigmund
+1243 verbose get https://registry.npmjs.org/lru-cache not expired, no request
+1244 silly addNameRange number 2 { name: 'lru-cache', range: '>=2.0.0 <3.0.0', hasData: true }
+1245 silly addNameRange versions [ 'lru-cache',
+1245 silly addNameRange   [ '1.0.1',
+1245 silly addNameRange     '1.0.2',
+1245 silly addNameRange     '1.0.3',
+1245 silly addNameRange     '1.0.4',
+1245 silly addNameRange     '1.0.5',
+1245 silly addNameRange     '1.0.6',
+1245 silly addNameRange     '1.1.0',
+1245 silly addNameRange     '1.1.1',
+1245 silly addNameRange     '2.0.0',
+1245 silly addNameRange     '2.0.1',
+1245 silly addNameRange     '2.0.2',
+1245 silly addNameRange     '2.0.3',
+1245 silly addNameRange     '2.0.4',
+1245 silly addNameRange     '2.1.0',
+1245 silly addNameRange     '2.2.0',
+1245 silly addNameRange     '2.2.1',
+1245 silly addNameRange     '2.2.2',
+1245 silly addNameRange     '2.2.4',
+1245 silly addNameRange     '2.3.0',
+1245 silly addNameRange     '2.3.1',
+1245 silly addNameRange     '2.5.0',
+1245 silly addNameRange     '2.5.1',
+1245 silly addNameRange     '2.5.2',
+1245 silly addNameRange     '2.6.0',
+1245 silly addNameRange     '2.6.1',
+1245 silly addNameRange     '2.6.2',
+1245 silly addNameRange     '2.6.3',
+1245 silly addNameRange     '2.6.4',
+1245 silly addNameRange     '2.6.5',
+1245 silly addNameRange     '2.7.0',
+1245 silly addNameRange     '2.7.1',
+1245 silly addNameRange     '2.7.2',
+1245 silly addNameRange     '2.7.3',
+1245 silly addNameRange     '3.0.0',
+1245 silly addNameRange     '3.1.0',
+1245 silly addNameRange     '3.1.1',
+1245 silly addNameRange     '3.1.2',
+1245 silly addNameRange     '3.2.0' ] ]
+1246 silly addNamed lru-cache@2.7.3
+1247 verbose addNamed "2.7.3" is a plain semver version for lru-cache
+1248 silly cache afterAdd sigmund@1.0.1
+1249 verbose afterAdd /Users/chris/.npm/sigmund/1.0.1/package/package.json not in flight; writing
+1250 silly cache afterAdd lru-cache@2.7.3
+1251 verbose afterAdd /Users/chris/.npm/lru-cache/2.7.3/package/package.json not in flight; writing
+1252 verbose afterAdd /Users/chris/.npm/sigmund/1.0.1/package/package.json written
+1253 verbose afterAdd /Users/chris/.npm/lru-cache/2.7.3/package/package.json written
+1254 silly install resolved [ { name: 'sigmund',
+1254 silly install resolved     version: '1.0.1',
+1254 silly install resolved     description: 'Quick and dirty signatures for Objects.',
+1254 silly install resolved     main: 'sigmund.js',
+1254 silly install resolved     directories: { test: 'test' },
+1254 silly install resolved     dependencies: {},
+1254 silly install resolved     devDependencies: { tap: '~0.3.0' },
+1254 silly install resolved     scripts: { test: 'tap test/*.js', bench: 'node bench.js' },
+1254 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/sigmund.git' },
+1254 silly install resolved     keywords: [ 'object', 'signature', 'key', 'data', 'psychoanalysis' ],
+1254 silly install resolved     author:
+1254 silly install resolved      { name: 'Isaac Z. Schlueter',
+1254 silly install resolved        email: 'i@izs.me',
+1254 silly install resolved        url: 'http://blog.izs.me/' },
+1254 silly install resolved     license: 'ISC',
+1254 silly install resolved     gitHead: '527f97aa5bb253d927348698c0cd3bb267d098c6',
+1254 silly install resolved     bugs: { url: 'https://github.com/isaacs/sigmund/issues' },
+1254 silly install resolved     homepage: 'https://github.com/isaacs/sigmund#readme',
+1254 silly install resolved     _id: 'sigmund@1.0.1',
+1254 silly install resolved     _shasum: '3ff21f198cad2175f9f3b781853fd94d0d19b590',
+1254 silly install resolved     _from: 'sigmund@>=1.0.0 <1.1.0',
+1254 silly install resolved     _npmVersion: '2.10.0',
+1254 silly install resolved     _nodeVersion: '2.0.1',
+1254 silly install resolved     _npmUser: { name: 'isaacs', email: 'isaacs@npmjs.com' },
+1254 silly install resolved     dist:
+1254 silly install resolved      { shasum: '3ff21f198cad2175f9f3b781853fd94d0d19b590',
+1254 silly install resolved        tarball: 'http://registry.npmjs.org/sigmund/-/sigmund-1.0.1.tgz' },
+1254 silly install resolved     maintainers: [ [Object] ],
+1254 silly install resolved     _resolved: 'https://registry.npmjs.org/sigmund/-/sigmund-1.0.1.tgz',
+1254 silly install resolved     readme: 'ERROR: No README data found!' },
+1254 silly install resolved   { name: 'lru-cache',
+1254 silly install resolved     description: 'A cache object that deletes the least-recently-used items.',
+1254 silly install resolved     version: '2.7.3',
+1254 silly install resolved     author: { name: 'Isaac Z. Schlueter', email: 'i@izs.me' },
+1254 silly install resolved     keywords: [ 'mru', 'lru', 'cache' ],
+1254 silly install resolved     scripts: { test: 'tap test --gc' },
+1254 silly install resolved     main: 'lib/lru-cache.js',
+1254 silly install resolved     repository:
+1254 silly install resolved      { type: 'git',
+1254 silly install resolved        url: 'git://github.com/isaacs/node-lru-cache.git' },
+1254 silly install resolved     devDependencies: { tap: '^1.2.0', weak: '' },
+1254 silly install resolved     license: 'ISC',
+1254 silly install resolved     gitHead: '292048199f6d28b77fbe584279a1898e25e4c714',
+1254 silly install resolved     bugs: { url: 'https://github.com/isaacs/node-lru-cache/issues' },
+1254 silly install resolved     homepage: 'https://github.com/isaacs/node-lru-cache#readme',
+1254 silly install resolved     _id: 'lru-cache@2.7.3',
+1254 silly install resolved     _shasum: '6d4524e8b955f95d4f5b58851ce21dd72fb4e952',
+1254 silly install resolved     _from: 'lru-cache@>=2.0.0 <3.0.0',
+1254 silly install resolved     _npmVersion: '3.3.2',
+1254 silly install resolved     _nodeVersion: '4.0.0',
+1254 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+1254 silly install resolved     dist:
+1254 silly install resolved      { shasum: '6d4524e8b955f95d4f5b58851ce21dd72fb4e952',
+1254 silly install resolved        tarball: 'http://registry.npmjs.org/lru-cache/-/lru-cache-2.7.3.tgz' },
+1254 silly install resolved     maintainers: [ [Object], [Object] ],
+1254 silly install resolved     directories: {},
+1254 silly install resolved     _resolved: 'https://registry.npmjs.org/lru-cache/-/lru-cache-2.7.3.tgz',
+1254 silly install resolved     readme: 'ERROR: No README data found!' } ]
+1255 info install sigmund@1.0.1 into /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch
+1256 info install lru-cache@2.7.3 into /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch
+1257 info installOne sigmund@1.0.1
+1258 verbose installOne of sigmund to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch not in flight; installing
+1259 info installOne lru-cache@2.7.3
+1260 verbose installOne of lru-cache to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch not in flight; installing
+1261 verbose lock using /Users/chris/.npm/_locks/sigmund-ec9861f2bcb47a70.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1262 verbose lock using /Users/chris/.npm/_locks/lru-cache-b7f8ddb3a4220c69.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1263 silly install write writing sigmund 1.0.1 to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1264 silly install write writing lru-cache 2.7.3 to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1265 verbose unbuild lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1266 verbose unbuild lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1267 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/sigmund is being purged from base /usr/local
+1268 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1269 verbose tar unpack /Users/chris/.npm/sigmund/1.0.1/package.tgz
+1270 verbose tar unpacking to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1271 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/sigmund is being purged
+1272 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1273 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/lru-cache is being purged from base /usr/local
+1274 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1275 silly gunzTarPerm modes [ '755', '644' ]
+1276 verbose tar unpack /Users/chris/.npm/lru-cache/2.7.3/package.tgz
+1277 verbose tar unpacking to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1278 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/lru-cache is being purged
+1279 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1280 silly gunzTarPerm modes [ '755', '644' ]
+1281 silly gunzTarPerm extractEntry package.json
+1282 silly gunzTarPerm extractEntry package.json
+1283 silly gunzTarPerm extractEntry README.md
+1284 silly gunzTarPerm extractEntry LICENSE
+1285 silly gunzTarPerm extractEntry .npmignore
+1286 silly gunzTarPerm extractEntry README.md
+1287 silly gunzTarPerm extractEntry LICENSE
+1288 silly gunzTarPerm extractEntry .travis.yml
+1289 silly gunzTarPerm extractEntry bench.js
+1290 silly gunzTarPerm extractEntry sigmund.js
+1291 silly gunzTarPerm extractEntry CONTRIBUTORS
+1292 silly gunzTarPerm extractEntry lib/lru-cache.js
+1293 silly gunzTarPerm extractEntry test/basic.js
+1294 silly gunzTarPerm extractEntry test/basic.js
+1295 silly gunzTarPerm extractEntry test/foreach.js
+1296 silly gunzTarPerm extractEntry test/memory-leak.js
+1297 silly gunzTarPerm extractEntry test/serialize.js
+1298 verbose write writing to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/sigmund/package.json
+1299 info preinstall sigmund@1.0.1
+1300 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/sigmund/package.json
+1301 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/sigmund/package.json
+1302 silly install resolved []
+1303 verbose about to build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1304 info build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1305 info linkStuff sigmund@1.0.1
+1306 silly linkStuff sigmund@1.0.1 has /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules as its parent node_modules
+1307 silly linkStuff sigmund@1.0.1 is part of a global install
+1308 silly linkStuff sigmund@1.0.1 is installed into a global node_modules
+1309 verbose linkBins sigmund@1.0.1
+1310 verbose linkMans sigmund@1.0.1
+1311 verbose rebuildBundles sigmund@1.0.1
+1312 info install sigmund@1.0.1
+1313 info postinstall sigmund@1.0.1
+1314 verbose unlock done using /Users/chris/.npm/_locks/sigmund-ec9861f2bcb47a70.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1315 verbose write writing to /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/package.json
+1316 info preinstall lru-cache@2.7.3
+1317 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/package.json
+1318 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/package.json
+1319 silly install resolved []
+1320 verbose about to build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1321 info build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1322 info linkStuff lru-cache@2.7.3
+1323 silly linkStuff lru-cache@2.7.3 has /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules as its parent node_modules
+1324 silly linkStuff lru-cache@2.7.3 is part of a global install
+1325 silly linkStuff lru-cache@2.7.3 is installed into a global node_modules
+1326 verbose linkBins lru-cache@2.7.3
+1327 verbose linkMans lru-cache@2.7.3
+1328 verbose rebuildBundles lru-cache@2.7.3
+1329 info install lru-cache@2.7.3
+1330 info postinstall lru-cache@2.7.3
+1331 verbose unlock done using /Users/chris/.npm/_locks/lru-cache-b7f8ddb3a4220c69.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1332 verbose about to build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch
+1333 info build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch
+1334 info linkStuff minimatch@0.3.0
+1335 silly linkStuff minimatch@0.3.0 has /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules as its parent node_modules
+1336 silly linkStuff minimatch@0.3.0 is part of a global install
+1337 silly linkStuff minimatch@0.3.0 is installed into a global node_modules
+1338 verbose linkBins minimatch@0.3.0
+1339 verbose linkMans minimatch@0.3.0
+1340 verbose rebuildBundles minimatch@0.3.0
+1341 verbose rebuildBundles [ 'lru-cache', 'sigmund' ]
+1342 info install minimatch@0.3.0
+1343 info postinstall minimatch@0.3.0
+1344 verbose unlock done using /Users/chris/.npm/_locks/minimatch-934da0a974d18660.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob/node_modules/minimatch
+1345 verbose about to build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob
+1346 info build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob
+1347 info linkStuff glob@3.2.11
+1348 silly linkStuff glob@3.2.11 has /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules as its parent node_modules
+1349 silly linkStuff glob@3.2.11 is part of a global install
+1350 silly linkStuff glob@3.2.11 is installed into a global node_modules
+1351 verbose linkBins glob@3.2.11
+1352 verbose linkMans glob@3.2.11
+1353 verbose rebuildBundles glob@3.2.11
+1354 verbose rebuildBundles [ 'inherits', 'minimatch' ]
+1355 info install glob@3.2.11
+1356 info postinstall glob@3.2.11
+1357 verbose unlock done using /Users/chris/.npm/_locks/glob-10e1128a2d1ad179.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset/node_modules/glob
+1358 verbose about to build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset
+1359 info build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset
+1360 info linkStuff fileset@0.1.8
+1361 silly linkStuff fileset@0.1.8 has /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules as its parent node_modules
+1362 silly linkStuff fileset@0.1.8 is part of a global install
+1363 silly linkStuff fileset@0.1.8 is installed into a global node_modules
+1364 verbose linkBins fileset@0.1.8
+1365 verbose linkMans fileset@0.1.8
+1366 verbose rebuildBundles fileset@0.1.8
+1367 verbose rebuildBundles [ 'glob' ]
+1368 info install fileset@0.1.8
+1369 info postinstall fileset@0.1.8
+1370 verbose unlock done using /Users/chris/.npm/_locks/fileset-b3ebb0d16c37a9ea.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze/node_modules/fileset
+1371 verbose about to build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze
+1372 info build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze
+1373 info linkStuff gaze@0.3.4
+1374 silly linkStuff gaze@0.3.4 has /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules as its parent node_modules
+1375 silly linkStuff gaze@0.3.4 is part of a global install
+1376 silly linkStuff gaze@0.3.4 is installed into a global node_modules
+1377 verbose linkBins gaze@0.3.4
+1378 verbose linkMans gaze@0.3.4
+1379 verbose rebuildBundles gaze@0.3.4
+1380 verbose rebuildBundles [ 'fileset', 'minimatch' ]
+1381 info install gaze@0.3.4
+1382 info postinstall gaze@0.3.4
+1383 verbose unlock done using /Users/chris/.npm/_locks/gaze-48b9af787e43e135.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node/node_modules/gaze
+1384 verbose about to build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node
+1385 info build /usr/local/lib/node_modules/heroku/node_modules/jasmine-node
+1386 info linkStuff jasmine-node@1.10.2
+1387 silly linkStuff jasmine-node@1.10.2 has /usr/local/lib/node_modules/heroku/node_modules as its parent node_modules
+1388 silly linkStuff jasmine-node@1.10.2 is part of a global install
+1389 silly linkStuff jasmine-node@1.10.2 is installed into a global node_modules
+1390 verbose linkBins jasmine-node@1.10.2
+1391 verbose link bins [ { 'jasmine-node': 'bin/jasmine-node' },
+1391 verbose link bins   '/usr/local/lib/node_modules/heroku/node_modules/.bin',
+1391 verbose link bins   false ]
+1392 verbose linkMans jasmine-node@1.10.2
+1393 verbose rebuildBundles jasmine-node@1.10.2
+1394 verbose rebuildBundles [ '.bin',
+1394 verbose rebuildBundles   'gaze',
+1394 verbose rebuildBundles   'jasmine-reporters',
+1394 verbose rebuildBundles   'mkdirp',
+1394 verbose rebuildBundles   'requirejs',
+1394 verbose rebuildBundles   'underscore',
+1394 verbose rebuildBundles   'walkdir' ]
+1395 silly gentlyRm /usr/local/lib/node_modules/heroku/node_modules/.bin/jasmine-node is being purged
+1396 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/heroku/node_modules/.bin/jasmine-node
+1397 info install jasmine-node@1.10.2
+1398 info postinstall jasmine-node@1.10.2
+1399 verbose unlock done using /Users/chris/.npm/_locks/jasmine-node-38d1f620805b7dd5.lock for /usr/local/lib/node_modules/heroku/node_modules/jasmine-node
+1400 verbose about to build /usr/local/lib/node_modules/heroku
+1401 info build /usr/local/lib/node_modules/heroku
+1402 info linkStuff heroku@0.1.3
+1403 silly linkStuff heroku@0.1.3 has /usr/local/lib/node_modules as its parent node_modules
+1404 silly linkStuff heroku@0.1.3 is part of a global install
+1405 silly linkStuff heroku@0.1.3 is installed into a global node_modules
+1406 silly linkStuff heroku@0.1.3 is installed into the top-level global node_modules
+1407 verbose linkBins heroku@0.1.3
+1408 verbose linkMans heroku@0.1.3
+1409 verbose rebuildBundles heroku@0.1.3
+1410 verbose rebuildBundles [ '.bin', 'coffee-script', 'jasmine-node' ]
+1411 info install heroku@0.1.3
+1412 info postinstall heroku@0.1.3
+1413 verbose unlock done using /Users/chris/.npm/_locks/heroku-1f0311d54eba6df8.lock for /usr/local/lib/node_modules/heroku
+1414 verbose validateInstall loading /usr/local/lib/package.json for validation
+1415 warn unmet dependency /usr/local/lib/node_modules/docker/node_modules/pygmentize-bundled/node_modules/bl requires readable-stream@'~1.0.2' but will load
+1415 warn unmet dependency /usr/local/lib/node_modules/docker/node_modules/pygmentize-bundled/node_modules/readable-stream,
+1415 warn unmet dependency which is version 1.0.27-1
+1416 warn unmet dependency /usr/local/lib/node_modules/phonegap/node_modules/phonegap-build requires colors@'0.6.x' but will load
+1416 warn unmet dependency /usr/local/lib/node_modules/phonegap/node_modules/colors,
+1416 warn unmet dependency which is version 0.6.0-1
+1417 warn unmet dependency /usr/local/lib/node_modules/phonegap/node_modules/phonegap-build/node_modules/qrcode-terminal requires colors@'*' but will load
+1417 warn unmet dependency /usr/local/lib/node_modules/phonegap/node_modules/colors,
+1417 warn unmet dependency which is version 0.6.0-1
+1418 warn unmet dependency /usr/local/lib/node_modules/phonegap/node_modules/prompt/node_modules/winston requires colors@'0.x.x' but will load
+1418 warn unmet dependency /usr/local/lib/node_modules/phonegap/node_modules/colors,
+1418 warn unmet dependency which is version 0.6.0-1
+1419 warn unmet dependency /usr/local/lib/node_modules/steroids/node_modules/karma/node_modules/connect/node_modules/multiparty/node_modules/stream-counter requires readable-stream@'~1.1.8' but will load
+1419 warn unmet dependency /usr/local/lib/node_modules/steroids/node_modules/karma/node_modules/connect/node_modules/multiparty/node_modules/readable-stream,
+1419 warn unmet dependency which is version 1.1.13-1
+1420 verbose stack Error: The package generator-karma@0.8.3 does not satisfy its siblings' peerDependencies requirements!
+1420 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+1420 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+1420 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+1420 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1420 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1420 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1420 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1420 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1420 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1420 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1421 verbose cwd /usr/local/src/computes/browser
+1422 error Darwin 15.0.0
+1423 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "heroku"
+1424 error node v4.2.2
+1425 error npm  v2.14.7
+1426 error code EPEERINVALID
+1427 error peerinvalid The package generator-karma@0.8.3 does not satisfy its siblings' peerDependencies requirements!
+1427 error peerinvalid Peer generator-angular@0.12.1 wants generator-karma@>=0.9.0
+1428 verbose exit [ 1, true ]
