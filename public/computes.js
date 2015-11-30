@@ -141,4 +141,16 @@ function finishJob(job,result,callback){
     });
 };
 
+setInterval(function(){
+  $.ajax({
+          type:'GET',
+          url: 'http://api.computes.io/cores',
+          success: function(msg) {
+              $('#cores').html(JSON.stringify(msg.cores));
+              console.log(msg.cores);
+          },
+          error: function() { $('#cores').html('0'); }
+  });
+}, 3000);
+
 requestJob();
