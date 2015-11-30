@@ -60,6 +60,12 @@ function requestJob(){
           requestJob();
         },1000);
       }
+    })
+    .fail(function() {
+      $('#log').html('requestJob error');
+      timer = setTimeout(function(){
+        requestJob();
+      },1000);
     });
 }
 
