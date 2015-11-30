@@ -132,6 +132,12 @@ function finishJob(job,result,callback){
       timer = setTimeout(function(){
         requestJob();
       },1000);
+    })
+    .fail(function() {
+      $('#log').html('finishJob error');
+      timer = setTimeout(function(){
+        requestJob();
+      },1000);
     });
 };
 
