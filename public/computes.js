@@ -2,6 +2,7 @@ var timer;
 var client = {};
 client.name=uuid.v1();
 
+// socket = io('http://localhost:9000');
 socket = io('http://api.computes.io');
 socket.connect();
 socket.on('connect', function () {
@@ -15,6 +16,7 @@ socket.on('connect', function () {
 function requestJob(){
 
   var post={
+    // url: 'http://localhost:9000/jobs/requestJob',
     url: 'http://api.computes.io/jobs/requestJob',
     form: {
       client: client,
@@ -94,21 +96,59 @@ function runJob(job){
       $('#log').html('> data:'+data+'<br/>');
 
       if(operation){
-        var test = eval(operation);
-        if (data){
-          result = test(data);
-        } else {
-          result = test();
-        }
-        $('#log').html('operation: ' + JSON.stringify(operation)+'<br/>');
-        $('#log').html('data: ' + JSON.stringify(data)+'<br/>');
-        $('#log').html('result: ' + JSON.stringify({result:result})+'<br/>');
 
-        result = {result:result};
-        finishJob(job,result,function(){
+        // check if operation is URL. If so, fetch operation
+        var expression = /https?:\/\/(?:www\.|(?!www))[^\s\.]+\.[^\s]{2,}|www\.[^\s]+\.[^\s]{2,}/;
+        var regex = new RegExp(expression);
+        if (operation.match(regex) )
+         {
 
-        });
+           $.ajax({
+             cache: false,
+             type:'GET',
+             url: operation,
+             // url: 'http://api.computes.io/cores',
+             success: function(msg) {
+
+               var test = eval(msg);
+               if (data){
+                 result = test(data);
+               } else {
+                 result = test();
+               }
+               $('#log').html('operation: ' + JSON.stringify(msg)+'<br/>');
+               $('#log').html('data: ' + JSON.stringify(data)+'<br/>');
+               $('#log').html('result: ' + JSON.stringify({result:result})+'<br/>');
+
+              //finish job
+              result = {result:result};
+              finishJob(job,result,function(){
+
+              });
+
+             }
+           });
+         } else {
+
+           var test = eval(operation);
+           if (data){
+             result = test(data);
+           } else {
+             result = test();
+           }
+           $('#log').html('operation: ' + JSON.stringify(operation)+'<br/>');
+           $('#log').html('data: ' + JSON.stringify(data)+'<br/>');
+           $('#log').html('result: ' + JSON.stringify({result:result})+'<br/>');
+
+          //finish job
+          result = {result:result};
+          finishJob(job,result,function(){
+
+          });
+
+         }
       }
+
     }
   }
 }
@@ -122,6 +162,7 @@ function finishJob(job,result,callback){
 
   $.ajax({
     method: 'POST',
+    // url: 'http://localhost:9000/jobs/finishJobs',
     url: 'http://api.computes.io/jobs/finishJobs',
     data: {client:client,jobs:job,result:result},
     cache: false,
@@ -144,6 +185,7 @@ function finishJob(job,result,callback){
 setInterval(function(){
   $.ajax({
           type:'GET',
+          // url: 'http://localhost:9000/cores',
           url: 'http://api.computes.io/cores',
           success: function(msg) {
               $('#cores').html(JSON.stringify(msg.cores));
