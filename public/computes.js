@@ -13,14 +13,23 @@ socket.on('connect', function () {
   });
 });
 
-function requestJob(){
+var qs = location.search.split('=');
+console.log("qs", qs);
+if (qs == ""){
+  var patterns = 'computes';
+} else {
+  var patterns = qs[1];
+}
 
+
+function requestJob(){
+  console.log(patterns);
   var post={
     // url: 'http://localhost:9000/jobs/requestJob',
     url: 'http://api.computes.io/jobs/requestJob',
     form: {
       client: client,
-      name_patterns: ['computes']
+      name_patterns: [patterns]
     },
     auth: { 'kazi-token':'YOUR-SECRET-TOKEN' }
   };
